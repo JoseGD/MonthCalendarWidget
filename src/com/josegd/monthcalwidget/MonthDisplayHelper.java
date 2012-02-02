@@ -17,7 +17,6 @@
 package com.josegd.monthcalwidget;
 
 import java.util.Calendar;
-import java.util.Date;
 
 /**
  * Helps answer common questions that come up when displaying a month in a
@@ -75,11 +74,6 @@ public class MonthDisplayHelper {
 
     public int getMonth() {
         return mCalendar.get(Calendar.MONTH);
-    }
-
-    // Return calendar's current date/time - Jose
-    public Date getTime() {
-   	 return mCalendar.getTime();
     }
 
     public int getWeekStartDay() {
