@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.josegd.monthcalwidget"
-	android:versionCode="2" android:versionName="1.1.0">
+	android:versionCode="3" android:versionName="1.2.0">
+
     <application android:icon="@drawable/monthcal" android:label="@string/app_name">
-		<receiver android:name=".MonthCalWidget" android:label="@string/app_name">
+      <!-- 3x2 widget -->
+		<receiver android:name=".MonthCalWidget3x2" android:label="@string/widget_3x2">
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>
 			<intent-filter>	
 				<action android:name="android.intent.action.DATE_CHANGED"/>
 			</intent-filter>
-			<meta-data android:name="android.appwidget.provider" android:resource="@xml/monthcal_widget_provider" />
+			<meta-data android:name="android.appwidget.provider" android:resource="@xml/mcw_provider_3x2" />
 		</receiver>
+      <!-- 4x3 widget -->
+		<receiver android:name=".MonthCalWidget4x3" android:label="@string/widget_4x3">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<intent-filter>	
+				<action android:name="android.intent.action.DATE_CHANGED"/>
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider" android:resource="@xml/mcw_provider_4x3" />
+		</receiver>
+      <!-- Service -->
 		<service android:name=".MCWUpdateService" />
     </application>
+
     <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="4"/>
+
 </manifest> 

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/mainll"
+	android:orientation="vertical"
+   android:paddingLeft="6dip"
+   android:paddingRight="6dip"
+   android:paddingBottom="12dip"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:background="@drawable/widget_bg">
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:id="@+id/navll"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+    	<ImageButton android:id="@+id/prevmonth" android:src="@drawable/selector_prev" style="@style/Img_Arrows_4x3" android:focusable="true"/>
+    	<TextView android:id="@+id/monthyear" style="@style/Text_MonthYear_4x3" android:focusable="true"/>
+    	<ImageButton android:id="@+id/nextmonth" android:src="@drawable/selector_next" style="@style/Img_Arrows_4x3" android:focusable="true"/>
+   </LinearLayout>	
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:id="@+id/datesll"
+		android:orientation="horizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      	android:orientation="vertical" style="@style/LL_DatesColumn_4x3">"
+	      <TextView android:id="@+id/day1" style="@style/Text_DaysOfWeek_4x3"/>
+	      <TextView android:id="@+id/date00" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date10" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date20" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date30" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date40" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date50" style="@style/Text_DatesColumn_4x3"/>
+		</LinearLayout>
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      	android:orientation="vertical" style="@style/LL_DatesColumn_4x3">
+       	<TextView android:id="@+id/day2" style="@style/Text_DaysOfWeek_4x3"/>
+	      <TextView android:id="@+id/date01" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date11" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date21" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date31" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date41" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date51" style="@style/Text_DatesColumn_4x3"/>
+		</LinearLayout>
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      	android:orientation="vertical" style="@style/LL_DatesColumn_4x3">
+       	<TextView android:id="@+id/day3" style="@style/Text_DaysOfWeek_4x3"/>
+	      <TextView android:id="@+id/date02" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date12" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date22" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date32" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date42" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date52" style="@style/Text_DatesColumn_4x3"/>
+		</LinearLayout>
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      	android:orientation="vertical" style="@style/LL_DatesColumn_4x3">
+	     	<TextView android:id="@+id/day4" style="@style/Text_DaysOfWeek_4x3"/>
+	      <TextView android:id="@+id/date03" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date13" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date23" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date33" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date43" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date53" style="@style/Text_DatesColumn_4x3"/>
+		</LinearLayout>
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      	android:orientation="vertical" style="@style/LL_DatesColumn_4x3">
+      	<TextView android:id="@+id/day5" style="@style/Text_DaysOfWeek_4x3"/>
+	      <TextView android:id="@+id/date04" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date14" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date24" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date34" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date44" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date54" style="@style/Text_DatesColumn_4x3"/>
+		</LinearLayout>
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      	android:orientation="vertical" style="@style/LL_DatesColumn_4x3">
+	      <TextView android:id="@+id/day6" style="@style/Text_DaysOfWeek_4x3"/>
+	      <TextView android:id="@+id/date05" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date15" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date25" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date35" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date45" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date55" style="@style/Text_DatesColumn_4x3"/>
+		</LinearLayout>
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      	android:orientation="vertical" style="@style/LL_DatesColumn_4x3">
+	     	<TextView android:id="@+id/day7" style="@style/Text_DaysOfWeek_4x3"/>
+	      <TextView android:id="@+id/date06" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date16" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date26" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date36" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date46" style="@style/Text_DatesColumn_4x3"/>
+	      <TextView android:id="@+id/date56" style="@style/Text_DatesColumn_4x3"/>
+		</LinearLayout>
+   </LinearLayout>
+</LinearLayout>

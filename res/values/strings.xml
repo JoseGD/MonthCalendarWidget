@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Month Calendar Widget</string>
+    <string name="widget_3x2">Month Calendar Widget 3x2</string>
+    <string name="widget_4x3">Month Calendar Widget 4x3</string>    
 </resources>
