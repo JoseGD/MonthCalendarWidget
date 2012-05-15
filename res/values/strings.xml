@@ -2,5 +2,33 @@
 <resources>
     <string name="app_name">Month Calendar Widget</string>
     <string name="widget_3x2">Month Calendar Widget 3x2</string>
-    <string name="widget_4x3">Month Calendar Widget 4x3</string>    
+    <string name="widget_4x3">Month Calendar Widget 4x3</string>
+    <string name="desc_prev">Previous month</string>
+    <string name="desc_next">Next month</string>
+
+    <string name="app_settings">Month Calendar Widget Settings</string>   
+
+    <string name="options">Options</string>
+    <string name="title_FDW">First day of week</string>
+    <string-array name="days_FDW">
+		<item>Sunday</item>
+		<item>Monday</item>
+	 </string-array>
+	 <string-array name="values_FDW">
+		<item>1</item>
+		<item>2</item>
+	 </string-array>
+    
+    <string name="feedback">Feedback</string>
+	 <string name="title_contactdev">Contact the developer</string>
+	 <string name="summary_contactdev">Email your comments, feature suggestions and bug reports</string>
+	 <string name="title_donate">Donate</string>
+	 <string name="summary_donate">If you like this app, you can support the developer\'s efforts making a donation</string>
+    	 
+    <string name="about_settings">About this app</string>
+    <string name="title_website">Website</string>
+	 <string name="summary_website">http://mobiledevjourney.blogspot.com</string>
+    <string name="title_version">Version</string>
+	 <string name="summary_version">1.2.0</string>
+	 	 	 
 </resources>

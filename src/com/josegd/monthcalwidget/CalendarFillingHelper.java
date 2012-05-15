@@ -32,10 +32,17 @@ public class CalendarFillingHelper {
 	
 	private void setWeekDays(Context cont, RemoteViews rv) {
 		int identifier;
+		int firstDay = mdh.getWeekStartDay();
+		String strWeekDay;
 		DateFormatSymbols weekDays = new DateFormatSymbols();
-		for (int i = Calendar.SUNDAY; i <= Calendar.SATURDAY; i++) {
+		for (int i = 1; i <= 7; i++) {
 			identifier = cont.getResources().getIdentifier("day" + i, "id", cont.getPackageName());
-			rv.setTextViewText(identifier, weekDays.getShortWeekdays()[i]);
+			if (firstDay == Calendar.SUNDAY) {
+				strWeekDay = weekDays.getShortWeekdays()[i];
+			} else {
+				strWeekDay = i != 7 ? weekDays.getShortWeekdays()[i+1] : weekDays.getShortWeekdays()[1];
+			}
+			rv.setTextViewText(identifier, strWeekDay);
 		}
 	}
 	

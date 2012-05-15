@@ -12,11 +12,13 @@ import android.widget.RemoteViews;
 
 public class MCWUpdateService extends IntentService {
 
+	public static String UPD_AFTER_SETTINGS = "com.josegd.monthcalwidget.APPWIDGET_UPDATE_AFTER_SETTINGS";
 	public static int yearNow;
 	public static int monthNow;
 	public static int today;
 	private static MonthDisplayHelper mdh;
 	private static CalendarFillingHelper cfh;
+	private static PreferencesHelper ph;
 
 	public MCWUpdateService() {
 		super("MCWUpdateService");
@@ -24,16 +26,17 @@ public class MCWUpdateService extends IntentService {
 	
 	@Override
 	public void onHandleIntent(Intent intent) {
-		initMonthDisplayHelper();
+		initMonthDisplayHelper(this);
 		updateCalendar(this, intent.getExtras().getString(MonthCalWidget.CALLING_CLASS_NAME));
 	}
 	
-	public static void initMonthDisplayHelper() {
+	public static void initMonthDisplayHelper(Context ctx) {
 		Calendar cal = Calendar.getInstance();
 		yearNow  = cal.get(Calendar.YEAR);
 		monthNow = cal.get(Calendar.MONTH);
 		today    = cal.get(Calendar.DATE);
-		mdh = new MonthDisplayHelper(yearNow, monthNow);
+		ph = new PreferencesHelper(ctx);
+		mdh = new MonthDisplayHelper(yearNow, monthNow, ph.firstDayOfWeek());
 	}
 
 	public static void nextMonth() {

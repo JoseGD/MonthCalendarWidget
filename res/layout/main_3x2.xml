@@ -13,9 +13,11 @@
 		android:orientation="horizontal"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content">
-    	<ImageButton android:id="@+id/prevmonth" android:src="@drawable/selector_prev" style="@style/Img_Arrows" android:focusable="true"/>
+    	<ImageButton android:id="@+id/prevmonth" android:src="@drawable/selector_prev"
+    	    style="@style/Img_Arrows" android:focusable="true" android:contentDescription="@string/desc_prev"/>
     	<TextView android:id="@+id/monthyear" style="@style/Text_MonthYear" android:focusable="true"/>
-    	<ImageButton android:id="@+id/nextmonth" android:src="@drawable/selector_next" style="@style/Img_Arrows" android:focusable="true"/>
+    	<ImageButton android:id="@+id/nextmonth" android:src="@drawable/selector_next"
+    	    style="@style/Img_Arrows" android:focusable="true" android:contentDescription="@string/desc_next"/>
    </LinearLayout>	
    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
    	android:id="@+id/datesll"
@@ -23,7 +25,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content">
       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-      	android:orientation="vertical" style="@style/LL_DatesColumn">"
+      	android:id="@+id/day1_ll" android:orientation="vertical" style="@style/LL_DatesColumn">
 	      <TextView android:id="@+id/day1" style="@style/Text_DaysOfWeek"/>
 	      <TextView android:id="@+id/date00" style="@style/Text_DatesColumn"/>
 	      <TextView android:id="@+id/date10" style="@style/Text_DatesColumn"/>
@@ -33,7 +35,7 @@
 	      <TextView android:id="@+id/date50" style="@style/Text_DatesColumn"/>
 		</LinearLayout>
       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-      	android:orientation="vertical" style="@style/LL_DatesColumn">
+      	android:id="@+id/day2_ll" android:orientation="vertical" style="@style/LL_DatesColumn">
        	<TextView android:id="@+id/day2" style="@style/Text_DaysOfWeek"/>
 	      <TextView android:id="@+id/date01" style="@style/Text_DatesColumn"/>
 	      <TextView android:id="@+id/date11" style="@style/Text_DatesColumn"/>
@@ -43,7 +45,7 @@
 	      <TextView android:id="@+id/date51" style="@style/Text_DatesColumn"/>
 		</LinearLayout>
       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-      	android:orientation="vertical" style="@style/LL_DatesColumn">
+      	android:id="@+id/day3_ll" android:orientation="vertical" style="@style/LL_DatesColumn">
        	<TextView android:id="@+id/day3" style="@style/Text_DaysOfWeek"/>
 	      <TextView android:id="@+id/date02" style="@style/Text_DatesColumn"/>
 	      <TextView android:id="@+id/date12" style="@style/Text_DatesColumn"/>
@@ -53,7 +55,7 @@
 	      <TextView android:id="@+id/date52" style="@style/Text_DatesColumn"/>
 		</LinearLayout>
       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-      	android:orientation="vertical" style="@style/LL_DatesColumn">
+      	android:id="@+id/day4_ll" android:orientation="vertical" style="@style/LL_DatesColumn">
 	     	<TextView android:id="@+id/day4" style="@style/Text_DaysOfWeek"/>
 	      <TextView android:id="@+id/date03" style="@style/Text_DatesColumn"/>
 	      <TextView android:id="@+id/date13" style="@style/Text_DatesColumn"/>
@@ -63,7 +65,7 @@
 	      <TextView android:id="@+id/date53" style="@style/Text_DatesColumn"/>
 		</LinearLayout>
       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-      	android:orientation="vertical" style="@style/LL_DatesColumn">
+      	android:id="@+id/day5_ll" android:orientation="vertical" style="@style/LL_DatesColumn">
       	<TextView android:id="@+id/day5" style="@style/Text_DaysOfWeek"/>
 	      <TextView android:id="@+id/date04" style="@style/Text_DatesColumn"/>
 	      <TextView android:id="@+id/date14" style="@style/Text_DatesColumn"/>
@@ -73,7 +75,7 @@
 	      <TextView android:id="@+id/date54" style="@style/Text_DatesColumn"/>
 		</LinearLayout>
       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-      	android:orientation="vertical" style="@style/LL_DatesColumn">
+      	android:id="@+id/day6_ll" android:orientation="vertical" style="@style/LL_DatesColumn">
 	      <TextView android:id="@+id/day6" style="@style/Text_DaysOfWeek"/>
 	      <TextView android:id="@+id/date05" style="@style/Text_DatesColumn"/>
 	      <TextView android:id="@+id/date15" style="@style/Text_DatesColumn"/>
@@ -83,7 +85,7 @@
 	      <TextView android:id="@+id/date55" style="@style/Text_DatesColumn"/>
 		</LinearLayout>
       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-      	android:orientation="vertical" style="@style/LL_DatesColumn">
+      	android:id="@+id/day7_ll" android:orientation="vertical" style="@style/LL_DatesColumn">
 	     	<TextView android:id="@+id/day7" style="@style/Text_DaysOfWeek"/>
 	      <TextView android:id="@+id/date06" style="@style/Text_DatesColumn"/>
 	      <TextView android:id="@+id/date16" style="@style/Text_DatesColumn"/>

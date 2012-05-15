@@ -8,14 +8,18 @@
 package com.josegd.monthcalwidget;
 
 public final class R {
+    public static final class array {
+        public static final int days_FDW=0x7f070000;
+        public static final int values_FDW=0x7f070001;
+    }
     public static final class attr {
     }
     public static final class color {
-        public static final int background=0x7f050004;
-        public static final int black=0x7f050000;
-        public static final int lightgray=0x7f050002;
-        public static final int today=0x7f050003;
-        public static final int white=0x7f050001;
+        public static final int background=0x7f050003;
+        public static final int lightgray=0x7f050001;
+        public static final int settingsbackground=0x7f050004;
+        public static final int today=0x7f050002;
+        public static final int white=0x7f050000;
     }
     public static final class drawable {
         public static final int monthcal=0x7f020000;
@@ -28,89 +32,113 @@ public final class R {
         public static final int widget_bg=0x7f020007;
     }
     public static final class id {
-        public static final int date00=0x7f080007;
-        public static final int date01=0x7f08000e;
-        public static final int date02=0x7f080015;
-        public static final int date03=0x7f08001c;
-        public static final int date04=0x7f080023;
-        public static final int date05=0x7f08002a;
-        public static final int date06=0x7f080031;
-        public static final int date10=0x7f080008;
-        public static final int date11=0x7f08000f;
-        public static final int date12=0x7f080016;
-        public static final int date13=0x7f08001d;
-        public static final int date14=0x7f080024;
-        public static final int date15=0x7f08002b;
-        public static final int date16=0x7f080032;
-        public static final int date20=0x7f080009;
-        public static final int date21=0x7f080010;
-        public static final int date22=0x7f080017;
-        public static final int date23=0x7f08001e;
-        public static final int date24=0x7f080025;
-        public static final int date25=0x7f08002c;
-        public static final int date26=0x7f080033;
-        public static final int date30=0x7f08000a;
-        public static final int date31=0x7f080011;
-        public static final int date32=0x7f080018;
-        public static final int date33=0x7f08001f;
-        public static final int date34=0x7f080026;
-        public static final int date35=0x7f08002d;
-        public static final int date36=0x7f080034;
-        public static final int date40=0x7f08000b;
-        public static final int date41=0x7f080012;
-        public static final int date42=0x7f080019;
-        public static final int date43=0x7f080020;
-        public static final int date44=0x7f080027;
-        public static final int date45=0x7f08002e;
-        public static final int date46=0x7f080035;
-        public static final int date50=0x7f08000c;
-        public static final int date51=0x7f080013;
-        public static final int date52=0x7f08001a;
-        public static final int date53=0x7f080021;
-        public static final int date54=0x7f080028;
-        public static final int date55=0x7f08002f;
-        public static final int date56=0x7f080036;
-        public static final int datesll=0x7f080005;
-        public static final int day1=0x7f080006;
-        public static final int day2=0x7f08000d;
-        public static final int day3=0x7f080014;
-        public static final int day4=0x7f08001b;
-        public static final int day5=0x7f080022;
-        public static final int day6=0x7f080029;
-        public static final int day7=0x7f080030;
-        public static final int mainll=0x7f080000;
-        public static final int monthyear=0x7f080003;
-        public static final int navll=0x7f080001;
-        public static final int nextmonth=0x7f080004;
-        public static final int prevmonth=0x7f080002;
+        public static final int date00=0x7f090008;
+        public static final int date01=0x7f090010;
+        public static final int date02=0x7f090018;
+        public static final int date03=0x7f090020;
+        public static final int date04=0x7f090028;
+        public static final int date05=0x7f090030;
+        public static final int date06=0x7f090038;
+        public static final int date10=0x7f090009;
+        public static final int date11=0x7f090011;
+        public static final int date12=0x7f090019;
+        public static final int date13=0x7f090021;
+        public static final int date14=0x7f090029;
+        public static final int date15=0x7f090031;
+        public static final int date16=0x7f090039;
+        public static final int date20=0x7f09000a;
+        public static final int date21=0x7f090012;
+        public static final int date22=0x7f09001a;
+        public static final int date23=0x7f090022;
+        public static final int date24=0x7f09002a;
+        public static final int date25=0x7f090032;
+        public static final int date26=0x7f09003a;
+        public static final int date30=0x7f09000b;
+        public static final int date31=0x7f090013;
+        public static final int date32=0x7f09001b;
+        public static final int date33=0x7f090023;
+        public static final int date34=0x7f09002b;
+        public static final int date35=0x7f090033;
+        public static final int date36=0x7f09003b;
+        public static final int date40=0x7f09000c;
+        public static final int date41=0x7f090014;
+        public static final int date42=0x7f09001c;
+        public static final int date43=0x7f090024;
+        public static final int date44=0x7f09002c;
+        public static final int date45=0x7f090034;
+        public static final int date46=0x7f09003c;
+        public static final int date50=0x7f09000d;
+        public static final int date51=0x7f090015;
+        public static final int date52=0x7f09001d;
+        public static final int date53=0x7f090025;
+        public static final int date54=0x7f09002d;
+        public static final int date55=0x7f090035;
+        public static final int date56=0x7f09003d;
+        public static final int datesll=0x7f090005;
+        public static final int day1=0x7f090007;
+        public static final int day1_ll=0x7f090006;
+        public static final int day2=0x7f09000f;
+        public static final int day2_ll=0x7f09000e;
+        public static final int day3=0x7f090017;
+        public static final int day3_ll=0x7f090016;
+        public static final int day4=0x7f09001f;
+        public static final int day4_ll=0x7f09001e;
+        public static final int day5=0x7f090027;
+        public static final int day5_ll=0x7f090026;
+        public static final int day6=0x7f09002f;
+        public static final int day6_ll=0x7f09002e;
+        public static final int day7=0x7f090037;
+        public static final int day7_ll=0x7f090036;
+        public static final int mainll=0x7f090000;
+        public static final int monthyear=0x7f090003;
+        public static final int navll=0x7f090001;
+        public static final int nextmonth=0x7f090004;
+        public static final int prevmonth=0x7f090002;
     }
     public static final class layout {
         public static final int main_3x2=0x7f030000;
         public static final int main_4x3=0x7f030001;
     }
     public static final class string {
+        public static final int about_settings=0x7f06000d;
         public static final int app_name=0x7f060000;
+        public static final int app_settings=0x7f060005;
+        public static final int desc_next=0x7f060004;
+        public static final int desc_prev=0x7f060003;
+        public static final int feedback=0x7f060008;
+        public static final int options=0x7f060006;
+        public static final int summary_contactdev=0x7f06000a;
+        public static final int summary_donate=0x7f06000c;
+        public static final int summary_version=0x7f060011;
+        public static final int summary_website=0x7f06000f;
+        public static final int title_FDW=0x7f060007;
+        public static final int title_contactdev=0x7f060009;
+        public static final int title_donate=0x7f06000b;
+        public static final int title_version=0x7f060010;
+        public static final int title_website=0x7f06000e;
         public static final int widget_3x2=0x7f060001;
         public static final int widget_4x3=0x7f060002;
     }
     public static final class style {
         /**  3x2 
          */
-        public static final int Img_Arrows=0x7f070000;
+        public static final int Img_Arrows=0x7f080001;
         /**  4x3 
          */
-        public static final int Img_Arrows_4x3=0x7f070005;
-        public static final int LL_DatesColumn=0x7f070002;
-        public static final int LL_DatesColumn_4x3=0x7f070007;
-        public static final int Text_DatesColumn=0x7f070004;
-        public static final int Text_DatesColumn_4x3=0x7f070009;
-        public static final int Text_DaysOfWeek=0x7f070003;
-        public static final int Text_DaysOfWeek_4x3=0x7f070008;
-        public static final int Text_MonthYear=0x7f070001;
-        public static final int Text_MonthYear_4x3=0x7f070006;
+        public static final int Img_Arrows_4x3=0x7f080006;
+        public static final int LL_DatesColumn=0x7f080003;
+        public static final int LL_DatesColumn_4x3=0x7f080008;
+        public static final int SettingsTheme=0x7f080000;
+        public static final int Text_DatesColumn=0x7f080005;
+        public static final int Text_DatesColumn_4x3=0x7f08000a;
+        public static final int Text_DaysOfWeek=0x7f080004;
+        public static final int Text_DaysOfWeek_4x3=0x7f080009;
+        public static final int Text_MonthYear=0x7f080002;
+        public static final int Text_MonthYear_4x3=0x7f080007;
     }
     public static final class xml {
         public static final int mcw_provider_3x2=0x7f040000;
         public static final int mcw_provider_4x3=0x7f040001;
+        public static final int mcw_settings=0x7f040002;
     }
 }

@@ -4,7 +4,5 @@
 	android:initialLayout="@layout/main_4x3"
 	android:minWidth="294dip"
 	android:minHeight="220dip"
-	android:updatePeriodMillis="0"/>
-	
-<!-- android:configure="com.josegd.MCWConfigure"-->
-	
+	android:updatePeriodMillis="0"
+	android:configure="com.josegd.monthcalwidget.MCWSettings"/>

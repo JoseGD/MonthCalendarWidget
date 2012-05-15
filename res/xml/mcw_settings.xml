@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  	<PreferenceCategory android:title="@string/options">
+  		<ListPreference
+			android:key="first_day_week"
+			android:title="@string/title_FDW"
+			android:entries="@array/days_FDW"
+			android:entryValues="@array/values_FDW"
+			android:defaultValue="1"
+			android:dialogTitle="@string/title_FDW" />
+   </PreferenceCategory>
+  		
+   <PreferenceCategory android:title="@string/feedback">
+   	<Preference
+   	    android:key="email_developer"
+   	    android:title="@string/title_contactdev"
+   	    android:summary="@string/summary_contactdev" />
+   	<Preference
+   	    android:key="donate"
+   	    android:title="@string/title_donate"
+   	    android:summary="@string/summary_donate" />
+   </PreferenceCategory>
+	
+	<PreferenceCategory android:title="@string/about_settings">
+   	<Preference
+   	    android:key="website"
+   	    android:title="@string/title_website"
+   	    android:summary="@string/summary_website" />
+	   <Preference
+   	    android:title="@string/title_version"
+   	    android:summary="@string/summary_version" />
+   </PreferenceCategory>
+
+</PreferenceScreen>

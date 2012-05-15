@@ -7,22 +7,15 @@ import android.content.Intent;
 
 public class MonthCalWidget extends AppWidgetProvider {
 	
-	public static String WIDGET_CLICK_NEXT   = "com.josegd.monthcalwidget.ACTION_NEXT_MONTH";
-	public static String WIDGET_CLICK_PREV   = "com.josegd.monthcalwidget.ACTION_PREV_MONTH";
-	public static String WIDGET_CLICK_MYTV   = "com.josegd.monthcalwidget.ACTION_CURRENT_MONTH";
-	public static String WIDGET_DATE_CHANGED = "android.intent.action.DATE_CHANGED";
-	public static String CALLING_CLASS_NAME  = "MCW_Descendant";
+	public static String CALLING_CLASS_NAME   = "MCW_Descendant";
+	public static String WIDGET_CLICK_NEXT    = "com.josegd.monthcalwidget.ACTION_NEXT_MONTH";
+	public static String WIDGET_CLICK_PREV    = "com.josegd.monthcalwidget.ACTION_PREV_MONTH";
+	public static String WIDGET_CLICK_MYTV    = "com.josegd.monthcalwidget.ACTION_CURRENT_MONTH";
+	private static String WIDGET_DATE_CHANGED = "android.intent.action.DATE_CHANGED";
 	
 	private AlarmManagerHelper alh;
 	private String mcwClassName = this.getClass().getName();
 	
-	@Override
-	public void onEnabled(Context context) {
-		super.onEnabled(context);
-		alh = new AlarmManagerHelper(mcwClassName);
-		alh.setNewDayAlarm(context);
-	}
-
 	@Override
 	public void onDisabled(Context context) {
 		alh.cancelNewDayAlarm(context);
@@ -32,6 +25,8 @@ public class MonthCalWidget extends AppWidgetProvider {
 	@Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
 		super.onUpdate(context, appWidgetManager, appWidgetIds);
+		alh = new AlarmManagerHelper(mcwClassName);
+		alh.setNewDayAlarm(context);
 		initService(context);
 	}
 
@@ -47,11 +42,14 @@ public class MonthCalWidget extends AppWidgetProvider {
 				} else
 					if (action.equals(WIDGET_CLICK_MYTV) || 
 							action.equals(AlarmManagerHelper.WIDGET_NEWDAY_ALARM) || action.equals(WIDGET_DATE_CHANGED)) {
-						MCWUpdateService.initMonthDisplayHelper();
-					} else {
-						super.onReceive(context, intent);
-						return;
-					  }
+						MCWUpdateService.initMonthDisplayHelper(context);
+					} else
+						if (action.equals(MCWUpdateService.UPD_AFTER_SETTINGS)) {
+							initService(context);
+						} else {
+						   super.onReceive(context, intent);
+						   return;
+						}
 			MCWUpdateService.updateCalendar(context, mcwClassName);
 		} catch (NullPointerException e) {
 			initService(context); 
