@@ -18,12 +18,36 @@ public class CalendarFillingHelper {
 		mdh = month;
 	}
 	
-	public void fillCalendar(Context cont, RemoteViews rv) {
-		// Month and year (title)
+	private String getMonthYearString() {
 		SimpleDateFormat sdfDate = new SimpleDateFormat("MMMM yyyy");
 		Calendar cal = Calendar.getInstance();
 		cal.set(mdh.getYear(), mdh.getMonth(), 1);
-		rv.setTextViewText( R.id.monthyear, sdfDate.format(cal.getTime()) ); 
+		return sdfDate.format(cal.getTime());
+	}
+	
+	private String getWeekDayShortName(int index) {
+		int firstDay = mdh.getWeekStartDay();
+		DateFormatSymbols weekDays = new DateFormatSymbols();
+		String strWeekDay = "";
+		switch (firstDay) {
+			case Calendar.SUNDAY:
+				strWeekDay = weekDays.getShortWeekdays()[index];
+				break;
+			case Calendar.MONDAY:
+				strWeekDay = index != 7 ? weekDays.getShortWeekdays()[index+1] : weekDays.getShortWeekdays()[1];
+				break;
+			case Calendar.SATURDAY:
+				strWeekDay = index != 1 ? weekDays.getShortWeekdays()[index-1] : weekDays.getShortWeekdays()[7];
+				break;
+			default:
+				break;
+		}
+		return strWeekDay;
+	}
+	
+	public void fillCalendar(Context cont, RemoteViews rv) {
+		// Month and year (title)
+		rv.setTextViewText(R.id.monthyear, getMonthYearString()); 
 		// Dates (grid)
 		setWeekDays(cont, rv);
 		clearDatesGrid(cont, rv);
@@ -32,17 +56,9 @@ public class CalendarFillingHelper {
 	
 	private void setWeekDays(Context cont, RemoteViews rv) {
 		int identifier;
-		int firstDay = mdh.getWeekStartDay();
-		String strWeekDay;
-		DateFormatSymbols weekDays = new DateFormatSymbols();
 		for (int i = 1; i <= 7; i++) {
 			identifier = cont.getResources().getIdentifier("day" + i, "id", cont.getPackageName());
-			if (firstDay == Calendar.SUNDAY) {
-				strWeekDay = weekDays.getShortWeekdays()[i];
-			} else {
-				strWeekDay = i != 7 ? weekDays.getShortWeekdays()[i+1] : weekDays.getShortWeekdays()[1];
-			}
-			rv.setTextViewText(identifier, strWeekDay);
+			rv.setTextViewText(identifier, getWeekDayShortName(i));
 		}
 	}
 	

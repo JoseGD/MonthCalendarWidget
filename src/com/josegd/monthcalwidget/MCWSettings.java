@@ -1,5 +1,6 @@
 package com.josegd.monthcalwidget;
 
+import android.annotation.SuppressLint;
 import android.appwidget.AppWidgetManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -81,6 +82,7 @@ public class MCWSettings extends PreferenceActivity implements OnSharedPreferenc
       }
    }
 	
+	@SuppressLint("NewApi")
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK && Integer.parseInt(Build.VERSION.SDK) < 5) {

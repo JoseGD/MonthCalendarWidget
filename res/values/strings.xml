@@ -13,10 +13,12 @@
     <string-array name="days_FDW">
 		<item>Sunday</item>
 		<item>Monday</item>
+		<item>Saturday</item>
 	 </string-array>
 	 <string-array name="values_FDW">
 		<item>1</item>
 		<item>2</item>
+		<item>7</item>		
 	 </string-array>
     
     <string name="feedback">Feedback</string>
@@ -29,6 +31,6 @@
     <string name="title_website">Website</string>
 	 <string name="summary_website">http://mobiledevjourney.blogspot.com</string>
     <string name="title_version">Version</string>
-	 <string name="summary_version">1.2.0</string>
+	 <string name="summary_version">1.3.0</string>
 	 	 	 
 </resources>
