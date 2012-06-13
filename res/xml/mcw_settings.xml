@@ -9,6 +9,11 @@
 			android:entryValues="@array/values_FDW"
 			android:defaultValue="1"
 			android:dialogTitle="@string/title_FDW" />
+  		<CheckBoxPreference 
+  		    android:key="adjust_columns"
+   	    android:title="@string/title_adjustcolumns"
+   	    android:summary="@string/summary_adjustcolumns"
+   	    android:defaultValue="false"/>
    </PreferenceCategory>
   		
    <PreferenceCategory android:title="@string/feedback">

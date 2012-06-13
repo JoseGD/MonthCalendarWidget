@@ -24,6 +24,10 @@
    	<item name="android:layout_width">25dip</item>
    	<item name="android:layout_height">wrap_content</item>
    </style>
+   <style name="LL_DatesColumn_WC">
+   	<item name="android:layout_width">wrap_content</item>
+   	<item name="android:layout_height">wrap_content</item>
+   </style>
    <style name="Text_DaysOfWeek">
       <item name="android:textSize">10sp</item>
       <item name="android:textColor">@color/lightgray</item>
@@ -58,6 +62,10 @@
    </style>
    <style name="LL_DatesColumn_4x3">
    	<item name="android:layout_width">38dip</item>
+   	<item name="android:layout_height">wrap_content</item>
+   </style>
+   <style name="LL_DatesColumn_4x3_WC">
+   	<item name="android:layout_width">wrap_content</item>
    	<item name="android:layout_height">wrap_content</item>
    </style>
    <style name="Text_DaysOfWeek_4x3">

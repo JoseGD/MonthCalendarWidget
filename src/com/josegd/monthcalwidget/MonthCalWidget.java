@@ -46,6 +46,7 @@ public class MonthCalWidget extends AppWidgetProvider {
 					} else
 						if (action.equals(MCWUpdateService.UPD_AFTER_SETTINGS)) {
 							initService(context);
+							return;
 						} else {
 						   super.onReceive(context, intent);
 						   return;
