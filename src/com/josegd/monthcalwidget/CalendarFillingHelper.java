@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.BackgroundColorSpan;
@@ -37,13 +38,21 @@ public class CalendarFillingHelper {
 		DateFormatSymbols weekDays = new DateFormatSymbols();
 		for (int i = 1; i <= 7; i++) {
 			identifier = cont.getResources().getIdentifier("day" + i, "id", cont.getPackageName());
+			int dayColor = Color.WHITE;
 			if (firstDay == Calendar.SUNDAY) {
 				strWeekDay = weekDays.getShortWeekdays()[i];
 			} else {
 				strWeekDay = i != 7 ? weekDays.getShortWeekdays()[i+1] : weekDays.getShortWeekdays()[1];
 			}
+			if(shouldBeColored(i))
+				dayColor = Color.RED;
 			rv.setTextViewText(identifier, strWeekDay);
+			rv.setTextColor(identifier, dayColor);
 		}
+	}
+
+	private boolean shouldBeColored(int i) {
+		return (mdh.getWeekStartDay() == Calendar.SUNDAY && i == 1)||(mdh.getWeekStartDay() == Calendar.MONDAY && i == 7);
 	}
 	
 	private void clearDatesGrid(Context cont, RemoteViews rv) {
@@ -76,6 +85,7 @@ public class CalendarFillingHelper {
 						rv.setTextViewText(identifier, ssb);
 					} else {
 						rv.setTextViewText(identifier, dateNumberStr);
+						rv.setTextColor(identifier, shouldBeColored(j+1)?Color.RED:Color.WHITE);
 					}
 					nextDateNumber = dateNumber + 7;
 				}
