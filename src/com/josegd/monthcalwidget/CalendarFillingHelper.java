@@ -3,6 +3,7 @@ package com.josegd.monthcalwidget;
 import java.text.DateFormatSymbols;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -21,7 +22,7 @@ public class CalendarFillingHelper {
 	
 	public void fillCalendar(Context cont, RemoteViews rv) {
 		// Month and year (title)
-		SimpleDateFormat sdfDate = new SimpleDateFormat("MMMM yyyy");
+		SimpleDateFormat sdfDate = new SimpleDateFormat("LLLL yyyy");
 		Calendar cal = Calendar.getInstance();
 		cal.set(mdh.getYear(), mdh.getMonth(), 1);
 		rv.setTextViewText( R.id.monthyear, sdfDate.format(cal.getTime()) ); 
