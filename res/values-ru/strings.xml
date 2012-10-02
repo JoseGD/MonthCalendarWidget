@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Month Calendar Widget</string>
+    <string name="widget_3x2">Month Calendar Widget 3x2</string>
+    <string name="widget_4x3">Month Calendar Widget 4x3</string>
+    <string name="desc_prev">Предыдущий месяц</string>
+    <string name="desc_next">Следующий месяц</string>
+
+    <string name="app_settings">Настройки Month Calendar</string>   
+
+    <string name="options">Настройки</string>
+    <string name="title_FDW">Первый день недели</string>
+    <string-array name="days_FDW">
+		<item>Воскресение</item>
+		<item>Понедельник</item>
+	 </string-array>
+	 <string-array name="values_FDW">
+		<item>1</item>
+		<item>2</item>
+	 </string-array>
+    
+    <string name="feedback">Отзыв</string>
+	 <string name="title_contactdev">Связаться с разработчиком</string>
+	 <string name="summary_contactdev">Отправить отзывы, предложения, отчёт об ошибке</string>
+	 <string name="title_donate">Donate</string>
+	 <string name="summary_donate">Если Вам понравилось приложение, вы можете поддержать разработчика.</string>
+    	 
+    <string name="about_settings">О приложении</string>
+    <string name="title_website">Сайт разработчика</string>
+	 <string name="summary_website">http://mobiledevjourney.blogspot.com</string>
+    <string name="title_version">Версия</string>
+	 <string name="summary_version">1.2.0</string>
+	 	 	 
+</resources>

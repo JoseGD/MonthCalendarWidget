@@ -3,8 +3,10 @@ package com.josegd.monthcalwidget;
 import java.text.DateFormatSymbols;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.BackgroundColorSpan;
@@ -20,7 +22,7 @@ public class CalendarFillingHelper {
 	
 	public void fillCalendar(Context cont, RemoteViews rv) {
 		// Month and year (title)
-		SimpleDateFormat sdfDate = new SimpleDateFormat("MMMM yyyy");
+		SimpleDateFormat sdfDate = new SimpleDateFormat("LLLL yyyy");
 		Calendar cal = Calendar.getInstance();
 		cal.set(mdh.getYear(), mdh.getMonth(), 1);
 		rv.setTextViewText( R.id.monthyear, sdfDate.format(cal.getTime()) ); 
@@ -43,7 +45,13 @@ public class CalendarFillingHelper {
 				strWeekDay = i != 7 ? weekDays.getShortWeekdays()[i+1] : weekDays.getShortWeekdays()[1];
 			}
 			rv.setTextViewText(identifier, strWeekDay);
+			rv.setTextColor(identifier, getColorForDay(i));
 		}
+	}
+
+	private int getColorForDay(int i) {
+		boolean colored =  (mdh.getWeekStartDay() == Calendar.SUNDAY && i == 1)||(mdh.getWeekStartDay() == Calendar.MONDAY && i == 7);
+		return colored?Color.RED:Color.WHITE;
 	}
 	
 	private void clearDatesGrid(Context cont, RemoteViews rv) {
@@ -76,6 +84,7 @@ public class CalendarFillingHelper {
 						rv.setTextViewText(identifier, ssb);
 					} else {
 						rv.setTextViewText(identifier, dateNumberStr);
+						rv.setTextColor(identifier, getColorForDay(j+1));
 					}
 					nextDateNumber = dateNumber + 7;
 				}
