@@ -34,7 +34,7 @@
    	    android:summary="@string/summary_website" />
 	   <Preference
    	    android:title="@string/title_version"
-   	    android:summary="@string/summary_version" />
+   	    android:summary="@string/app_version" />
    </PreferenceCategory>
 
 </PreferenceScreen>

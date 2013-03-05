@@ -16,20 +16,23 @@ public final class R {
     }
     public static final class color {
         public static final int background=0x7f050003;
+        public static final int instructions_background=0x7f050005;
         public static final int lightgray=0x7f050001;
-        public static final int settingsbackground=0x7f050004;
+        public static final int settings_background=0x7f050004;
         public static final int today=0x7f050002;
         public static final int white=0x7f050000;
     }
     public static final class drawable {
-        public static final int monthcal=0x7f020000;
-        public static final int next_normal=0x7f020001;
-        public static final int next_pressed=0x7f020002;
-        public static final int previous_normal=0x7f020003;
-        public static final int previous_pressed=0x7f020004;
-        public static final int selector_next=0x7f020005;
-        public static final int selector_prev=0x7f020006;
-        public static final int widget_bg=0x7f020007;
+        public static final int mcw_3x2_preview=0x7f020000;
+        public static final int mcw_4x3_preview=0x7f020001;
+        public static final int monthcal=0x7f020002;
+        public static final int next_normal=0x7f020003;
+        public static final int next_pressed=0x7f020004;
+        public static final int previous_normal=0x7f020005;
+        public static final int previous_pressed=0x7f020006;
+        public static final int selector_next=0x7f020007;
+        public static final int selector_prev=0x7f020008;
+        public static final int widget_bg=0x7f020009;
     }
     public static final class id {
         public static final int date00=0x7f090008;
@@ -89,8 +92,13 @@ public final class R {
         public static final int day6_ll=0x7f09002e;
         public static final int day7=0x7f090037;
         public static final int day7_ll=0x7f090036;
+        public static final int instructions_intro=0x7f090040;
+        public static final int instructions_text=0x7f090041;
+        public static final int instructions_title=0x7f09003f;
+        public static final int main_instr_ll=0x7f09003e;
         public static final int mainll=0x7f090000;
         public static final int monthyear=0x7f090003;
+        public static final int more_info=0x7f090042;
         public static final int navll=0x7f090001;
         public static final int nextmonth=0x7f090004;
         public static final int prevmonth=0x7f090002;
@@ -100,47 +108,52 @@ public final class R {
         public static final int main_3x2_wc=0x7f030001;
         public static final int main_4x3=0x7f030002;
         public static final int main_4x3_wc=0x7f030003;
+        public static final int main_instructions=0x7f030004;
     }
     public static final class string {
-        public static final int about_settings=0x7f06000f;
-        public static final int app_name=0x7f060000;
-        public static final int app_settings=0x7f060005;
-        public static final int desc_next=0x7f060004;
-        public static final int desc_prev=0x7f060003;
-        public static final int feedback=0x7f06000a;
-        public static final int options=0x7f060006;
-        public static final int summary_adjustcolumns=0x7f060009;
-        public static final int summary_contactdev=0x7f06000c;
-        public static final int summary_donate=0x7f06000e;
-        public static final int summary_version=0x7f060013;
-        public static final int summary_website=0x7f060011;
-        public static final int title_FDW=0x7f060007;
-        public static final int title_adjustcolumns=0x7f060008;
-        public static final int title_contactdev=0x7f06000b;
-        public static final int title_donate=0x7f06000d;
-        public static final int title_version=0x7f060012;
-        public static final int title_website=0x7f060010;
-        public static final int widget_3x2=0x7f060001;
-        public static final int widget_4x3=0x7f060002;
+        public static final int about_settings=0x7f060011;
+        public static final int app_name=0x7f060001;
+        public static final int app_settings=0x7f060007;
+        public static final int app_version=0x7f060002;
+        public static final int desc_next=0x7f060006;
+        public static final int desc_prev=0x7f060005;
+        public static final int feedback=0x7f06000c;
+        public static final int instructions_intro=0x7f060015;
+        public static final int instructions_text=0x7f060000;
+        public static final int more_info=0x7f060016;
+        public static final int options=0x7f060008;
+        public static final int summary_adjustcolumns=0x7f06000b;
+        public static final int summary_contactdev=0x7f06000e;
+        public static final int summary_donate=0x7f060010;
+        public static final int summary_website=0x7f060013;
+        public static final int title_FDW=0x7f060009;
+        public static final int title_adjustcolumns=0x7f06000a;
+        public static final int title_contactdev=0x7f06000d;
+        public static final int title_donate=0x7f06000f;
+        public static final int title_version=0x7f060014;
+        public static final int title_website=0x7f060012;
+        public static final int widget_3x2=0x7f060003;
+        public static final int widget_4x3=0x7f060004;
     }
     public static final class style {
         /**  3x2 
          */
-        public static final int Img_Arrows=0x7f080001;
+        public static final int Img_Arrows=0x7f080002;
         /**  4x3 
          */
-        public static final int Img_Arrows_4x3=0x7f080007;
-        public static final int LL_DatesColumn=0x7f080003;
-        public static final int LL_DatesColumn_4x3=0x7f080009;
-        public static final int LL_DatesColumn_4x3_WC=0x7f08000a;
-        public static final int LL_DatesColumn_WC=0x7f080004;
+        public static final int Img_Arrows_4x3=0x7f080008;
+        public static final int InstructionsTheme=0x7f080001;
+        public static final int LL_DatesColumn=0x7f080004;
+        public static final int LL_DatesColumn_4x3=0x7f08000a;
+        public static final int LL_DatesColumn_4x3_WC=0x7f08000b;
+        public static final int LL_DatesColumn_WC=0x7f080005;
         public static final int SettingsTheme=0x7f080000;
-        public static final int Text_DatesColumn=0x7f080006;
-        public static final int Text_DatesColumn_4x3=0x7f08000c;
-        public static final int Text_DaysOfWeek=0x7f080005;
-        public static final int Text_DaysOfWeek_4x3=0x7f08000b;
-        public static final int Text_MonthYear=0x7f080002;
-        public static final int Text_MonthYear_4x3=0x7f080008;
+        public static final int Text_DatesColumn=0x7f080007;
+        public static final int Text_DatesColumn_4x3=0x7f08000d;
+        public static final int Text_DaysOfWeek=0x7f080006;
+        public static final int Text_DaysOfWeek_4x3=0x7f08000c;
+        public static final int Text_MonthYear=0x7f080003;
+        public static final int Text_MonthYear_4x3=0x7f080009;
     }
     public static final class xml {
         public static final int mcw_provider_3x2=0x7f040000;

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="instructions_text"><b>1.</b> Open the Home screen where you want to place the widget\n<b>2.</b> Touch the <b>All apps</b> icon\n<b>3.</b> Choose the <b>Widgets</b> tab and swipe to the right to find one of the two available sizes (3x2 or 4x3)\n<b>4.</b> Touch and hold the widget until the Home screen appears, slide it into place and lift your finger\n<b>5.</b> Adjust settings if you wish (press <b>Back</b> to exit)</string>
+</resources>

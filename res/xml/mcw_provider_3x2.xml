@@ -5,4 +5,5 @@
 	android:minWidth="220dip"
 	android:minHeight="146dip"
 	android:updatePeriodMillis="0"
+   android:previewImage="@drawable/mcw_3x2_preview"
 	android:configure="com.josegd.monthcalwidget.MCWSettings"/>

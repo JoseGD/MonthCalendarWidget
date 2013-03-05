@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Month Calendar Widget</string>
+    <string name="app_version">1.3.0</string>
     <string name="widget_3x2">Month Calendar Widget 3x2</string>
     <string name="widget_4x3">Month Calendar Widget 4x3</string>
     <string name="desc_prev">Previous month</string>
@@ -21,7 +22,7 @@
 		<item>7</item>		
 	 </string-array>
 	 <string name="title_adjustcolumns">Auto adjust column width</string>
-	 <string name="summary_adjustcolumns">Use this option if dates are not aligned in columns  </string>
+	 <string name="summary_adjustcolumns">Use this option if dates are not properly aligned</string>
     
     <string name="feedback">Feedback</string>
 	 <string name="title_contactdev">Contact the developer</string>
@@ -33,6 +34,7 @@
     <string name="title_website">Website</string>
 	 <string name="summary_website">http://mobiledevjourney.blogspot.com</string>
     <string name="title_version">Version</string>
-	 <string name="summary_version">1.3.0</string>
-	 	 	 
+    
+    <string name="instructions_intro">The app was installed successfully. To put it on your home screen follow these steps:</string>
+    <string name="more_info">You can find more information about installing the widget &lt;a href="http://mobiledevjourney.blogspot.com/2013/02/how-to-put-month-calendar-widget-on.html">here&lt;/a></string>
 </resources>

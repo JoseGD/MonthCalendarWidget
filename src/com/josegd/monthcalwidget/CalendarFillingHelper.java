@@ -4,7 +4,9 @@ import java.text.DateFormatSymbols;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.os.Build;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.BackgroundColorSpan;
@@ -18,8 +20,10 @@ public class CalendarFillingHelper {
 		mdh = month;
 	}
 	
+	@SuppressLint("SimpleDateFormat")
 	private String getMonthYearString() {
-		SimpleDateFormat sdfDate = new SimpleDateFormat("MMMM yyyy");
+		String fmt = Build.VERSION.SDK_INT <= 8 ? "MMMM yyyy" : "LLLL yyyy";   // MMMM not the correct format for slavic languages / LLLL only available on 2.3+
+		SimpleDateFormat sdfDate = new SimpleDateFormat(fmt);
 		Calendar cal = Calendar.getInstance();
 		cal.set(mdh.getYear(), mdh.getMonth(), 1);
 		return sdfDate.format(cal.getTime());
@@ -67,7 +71,7 @@ public class CalendarFillingHelper {
 		for (int j = 0; j < 7; j++) {
 			for (int i = 0; i < 6; i++) {
 				identifier = cont.getResources().getIdentifier("date" + i + j, "id", cont.getPackageName());
-				rv.setTextViewText(identifier, "");
+				rv.setTextViewText(identifier, " "); // Empty string caused layout problems in tablets
 			}
 		}
 	}

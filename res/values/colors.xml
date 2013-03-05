@@ -4,5 +4,6 @@
     <color name="lightgray">#FFDBDBDB</color>
     <color name="today">#FF31517C</color>
     <color name="background">#71000000</color>
-    <color name="settingsbackground">#E8000000</color>
+    <color name="settings_background">#E8000000</color>
+    <color name="instructions_background">#E4000000</color>
 </resources>

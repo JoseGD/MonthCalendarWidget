@@ -31,6 +31,7 @@ public class MCWSettings extends PreferenceActivity implements OnSharedPreferenc
 	private static String WEBSITE_URL 		  = "http://mobiledevjourney.blogspot.com";
 	private static String CONFIGURE_ACTION   = "android.appwidget.action.APPWIDGET_CONFIGURE";
 	
+	@SuppressWarnings("deprecation")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -63,6 +64,7 @@ public class MCWSettings extends PreferenceActivity implements OnSharedPreferenc
 		});		
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Override
    protected void onResume() {
        super.onResume();
@@ -70,6 +72,7 @@ public class MCWSettings extends PreferenceActivity implements OnSharedPreferenc
        getPreferenceScreen().getSharedPreferences().registerOnSharedPreferenceChangeListener(this);
    }
 	
+	@SuppressWarnings("deprecation")
 	@Override
    protected void onPause() {
        super.onPause();
@@ -85,7 +88,7 @@ public class MCWSettings extends PreferenceActivity implements OnSharedPreferenc
 	@SuppressLint("NewApi")
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		if (keyCode == KeyEvent.KEYCODE_BACK && Integer.parseInt(Build.VERSION.SDK) < 5) {
+		if (keyCode == KeyEvent.KEYCODE_BACK && Build.VERSION.SDK_INT < 5) {
 			onBackPressed();
 		}
 		return(super.onKeyDown(keyCode, event));
