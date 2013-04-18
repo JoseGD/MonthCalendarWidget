@@ -92,14 +92,15 @@ public final class R {
         public static final int day6_ll=0x7f09002e;
         public static final int day7=0x7f090037;
         public static final int day7_ll=0x7f090036;
-        public static final int instructions_intro=0x7f090040;
-        public static final int instructions_text=0x7f090041;
-        public static final int instructions_title=0x7f09003f;
-        public static final int main_instr_ll=0x7f09003e;
+        public static final int instructions_intro=0x7f090041;
+        public static final int instructions_text=0x7f090042;
+        public static final int instructions_title=0x7f090040;
+        public static final int main_instr_ll=0x7f09003f;
         public static final int mainll=0x7f090000;
         public static final int monthyear=0x7f090003;
-        public static final int more_info=0x7f090042;
+        public static final int more_info=0x7f090043;
         public static final int navll=0x7f090001;
+        public static final int navrl=0x7f09003e;
         public static final int nextmonth=0x7f090004;
         public static final int prevmonth=0x7f090002;
     }

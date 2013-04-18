@@ -6,23 +6,24 @@
    android:layout_width="wrap_content" android:layout_height="wrap_content"
    android:paddingLeft="6dp" android:paddingRight="6dp"
    android:paddingBottom="12dp" android:background="@drawable/widget_bg">
-   <LinearLayout
-   	android:id="@+id/navll"
+   <RelativeLayout
+   	android:id="@+id/navrl"
       xmlns:android="http://schemas.android.com/apk/res/android"
-   	android:orientation="horizontal"
 		android:layout_width="match_parent"	android:layout_height="wrap_content">
-    	<ImageButton
-    		android:id="@+id/prevmonth"
-    		android:src="@drawable/selector_prev" style="@style/Img_Arrows_4x3"
-    		android:contentDescription="@string/desc_prev" android:focusable="true" />
     	<TextView
          android:id="@+id/monthyear"
          style="@style/Text_MonthYear_4x3" android:focusable="true"/>
+      <ImageButton
+         android:id="@+id/prevmonth"
+         android:layout_alignParentLeft="true" android:paddingRight="30dp"
+         android:src="@drawable/selector_prev" style="@style/Img_Arrows_4x3"
+         android:contentDescription="@string/desc_prev" android:focusable="true" />
     	<ImageButton
          android:id="@+id/nextmonth"
+         android:layout_alignParentRight="true" android:paddingLeft="30dp"
          android:src="@drawable/selector_next" style="@style/Img_Arrows_4x3"
          android:contentDescription="@string/desc_next" android:focusable="true" />
-   </LinearLayout>	
+   </RelativeLayout>	
    <LinearLayout
    	android:id="@+id/datesll"
    	xmlns:android="http://schemas.android.com/apk/res/android"
