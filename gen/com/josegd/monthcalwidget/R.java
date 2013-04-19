@@ -92,17 +92,24 @@ public final class R {
         public static final int day6_ll=0x7f09002e;
         public static final int day7=0x7f090037;
         public static final int day7_ll=0x7f090036;
-        public static final int instructions_intro=0x7f090041;
-        public static final int instructions_text=0x7f090042;
-        public static final int instructions_title=0x7f090040;
-        public static final int main_instr_ll=0x7f09003f;
+        public static final int instructions_intro=0x7f090048;
+        public static final int instructions_text=0x7f090049;
+        public static final int instructions_title=0x7f090047;
+        public static final int main_instr_ll=0x7f090046;
         public static final int mainll=0x7f090000;
         public static final int monthyear=0x7f090003;
-        public static final int more_info=0x7f090043;
+        public static final int more_info=0x7f09004a;
         public static final int navll=0x7f090001;
         public static final int navrl=0x7f09003e;
         public static final int nextmonth=0x7f090004;
         public static final int prevmonth=0x7f090002;
+        public static final int week1ll=0x7f090040;
+        public static final int week2ll=0x7f090041;
+        public static final int week3ll=0x7f090042;
+        public static final int week4ll=0x7f090043;
+        public static final int week5ll=0x7f090044;
+        public static final int week6ll=0x7f090045;
+        public static final int weekdaysll=0x7f09003f;
     }
     public static final class layout {
         public static final int main_3x2=0x7f030000;
@@ -150,7 +157,7 @@ public final class R {
         public static final int LL_DatesColumn_WC=0x7f080005;
         public static final int SettingsTheme=0x7f080000;
         public static final int Text_DatesColumn=0x7f080007;
-        public static final int Text_DatesColumn_4x3=0x7f08000d;
+        public static final int Text_Dates_4x3=0x7f08000d;
         public static final int Text_DaysOfWeek=0x7f080006;
         public static final int Text_DaysOfWeek_4x3=0x7f08000c;
         public static final int Text_MonthYear=0x7f080003;

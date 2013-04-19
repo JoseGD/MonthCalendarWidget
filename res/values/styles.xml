@@ -36,16 +36,16 @@
    <style name="Text_DaysOfWeek">
       <item name="android:textSize">10sp</item>
       <item name="android:textColor">@color/lightgray</item>
-	   <item name="android:layout_width">fill_parent</item>
-      <item name="android:layout_height">fill_parent</item> 
+	   <item name="android:layout_width">match_parent</item>
+      <item name="android:layout_height">match_parent</item> 
 	   <item name="android:gravity">center</item>
    </style>
    <style name="Text_DatesColumn">
       <item name="android:textSize">12sp</item>
       <item name="android:textColor">@color/white</item>
       <item name="android:paddingTop">4dp</item>
-	   <item name="android:layout_width">fill_parent</item>
-      <item name="android:layout_height">fill_parent</item> 
+	   <item name="android:layout_width">match_parent</item>
+      <item name="android:layout_height">match_parent</item> 
 	   <item name="android:gravity">right</item>
    </style>
    <!-- 4x3 -->
@@ -75,16 +75,18 @@
    <style name="Text_DaysOfWeek_4x3">
       <item name="android:textSize">14sp</item>
       <item name="android:textColor">@color/lightgray</item>
-	   <item name="android:layout_width">fill_parent</item>
-      <item name="android:layout_height">fill_parent</item> 
+	   <item name="android:layout_width">0dp</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_weight">1</item> 
 	   <item name="android:gravity">center</item>
    </style>
-   <style name="Text_DatesColumn_4x3">
+   <style name="Text_Dates_4x3">
       <item name="android:textSize">18sp</item>
       <item name="android:textColor">@color/white</item>
       <item name="android:paddingTop">9dp</item>
-	   <item name="android:layout_width">fill_parent</item>
-      <item name="android:layout_height">fill_parent</item> 
-	   <item name="android:gravity">right</item>
+	   <item name="android:layout_width">0dp</item>
+      <item name="android:layout_height">match_parent</item> 
+      <item name="android:layout_weight">1</item> 
+      <item name="android:gravity">right</item>
    </style>
 </resources>
