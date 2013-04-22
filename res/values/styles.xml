@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
    <style name="SettingsTheme">
       <item name="android:windowIsTranslucent">true</item>
       <item name="android:windowBackground">@color/settings_background</item>
@@ -64,14 +64,6 @@
       <item name="android:layout_height">wrap_content</item> 
 	   <item name="android:gravity">center</item>
    </style>
-   <style name="LL_DatesColumn_4x3">
-   	<item name="android:layout_width">38dp</item>
-   	<item name="android:layout_height">wrap_content</item>
-   </style>
-   <style name="LL_DatesColumn_4x3_WC">
-   	<item name="android:layout_width">wrap_content</item>
-   	<item name="android:layout_height">wrap_content</item>
-   </style>
    <style name="Text_DaysOfWeek_4x3">
       <item name="android:textSize">14sp</item>
       <item name="android:textColor">@color/lightgray</item>
@@ -80,13 +72,22 @@
       <item name="android:layout_weight">1</item> 
 	   <item name="android:gravity">center</item>
    </style>
+   <style name="LL_Week_4x3">
+      <item name="android:layout_width">match_parent</item>
+      <item name="android:layout_height">wrap_content</item>
+   </style>
    <style name="Text_Dates_4x3">
       <item name="android:textSize">18sp</item>
       <item name="android:textColor">@color/white</item>
-      <item name="android:paddingTop">9dp</item>
-	   <item name="android:layout_width">0dp</item>
+      <item name="android:layout_marginTop">9dp</item>
+      <item name="android:paddingRight">9dp</item>
+      <item name="android:layout_width">0dp</item>
       <item name="android:layout_height">match_parent</item> 
       <item name="android:layout_weight">1</item> 
       <item name="android:gravity">right</item>
+   </style>
+   <style name="LL_DatesColumn_4x3_WC">
+      <item name="android:layout_width">wrap_content</item>
+      <item name="android:layout_height">wrap_content</item>
    </style>
 </resources>

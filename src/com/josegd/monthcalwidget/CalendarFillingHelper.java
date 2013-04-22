@@ -10,6 +10,7 @@ import android.os.Build;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.BackgroundColorSpan;
+import android.view.View;
 import android.widget.RemoteViews;
 
 public class CalendarFillingHelper {
@@ -68,40 +69,37 @@ public class CalendarFillingHelper {
 	
 	private void clearDatesGrid(Context cont, RemoteViews rv) {
 		int identifier;
-		for (int j = 0; j < 7; j++) {
-			for (int i = 0; i < 6; i++) {
+		for (int i = 1; i <= 6; i++) {
+			for (int j = 1; j <= 7; j++) {
 				identifier = cont.getResources().getIdentifier("date" + i + j, "id", cont.getPackageName());
 				rv.setTextViewText(identifier, " "); // Empty string caused layout problems in tablets
 			}
 		}
 	}
-	
+
 	private void refillDatesGrid(Context cont, RemoteViews rv) {
-		int dateNumber, nextDateNumber;
-		int i, identifier;
-		String dateNumberStr;
-		for (int j = 0; j < 7; j++) {
-			i = 0;
-			nextDateNumber = 0;
-			do {
-				dateNumber = mdh.isWithinCurrentMonth(i, j) ? mdh.getDayAt(i, j) : 0;
-				if (dateNumber > 0) {
-					identifier = cont.getResources().getIdentifier("date" + i + j, "id", cont.getPackageName());
-					dateNumberStr = dateNumber < 10 ? "   " : "  ";
-					dateNumberStr += dateNumber + "  ";
-					if (mdh.getYear() == MCWUpdateService.yearNow && mdh.getMonth() == MCWUpdateService.monthNow && dateNumber == MCWUpdateService.today) {
-						SpannableStringBuilder ssb = new SpannableStringBuilder();
-						ssb.append(dateNumberStr);
-						ssb.setSpan(new BackgroundColorSpan(cont.getResources().getColor(R.color.today)), 1, 5, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-						rv.setTextViewText(identifier, ssb);
-					} else {
-						rv.setTextViewText(identifier, dateNumberStr);
-					}
-					nextDateNumber = dateNumber + 7;
+		int dateNumber;
+		int identifier;
+		boolean isToday;
+		for (int i = 1; i <= 6; i++)
+			for (int j = 1; j <= 7; j++) {
+				dateNumber = mdh.getDayAt(i-1, j-1);
+				identifier = cont.getResources().getIdentifier("date" + i + j, "id", cont.getPackageName());
+				isToday = mdh.getYear() == MCWUpdateService.yearNow && mdh.getMonth() == MCWUpdateService.monthNow &&
+							 dateNumber == MCWUpdateService.today && mdh.isWithinCurrentMonth(i-1, j-1);
+				if (Build.VERSION.SDK_INT >= 8) {
+					rv.setInt(identifier, "setBackgroundResource", isToday ? R.color.today : android.R.color.transparent);
+					rv.setTextViewText(identifier, dateNumber + "");
+				} else {
+					String dateNumberStr = dateNumber + "";
+					SpannableStringBuilder ssb = new SpannableStringBuilder();
+					ssb.append(dateNumberStr);
+					if (isToday)
+						ssb.setSpan(new BackgroundColorSpan(cont.getResources().getColor(R.color.today)), 0, dateNumberStr.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+					rv.setTextViewText(identifier, ssb);
 				}
-				i++;
-			} while (nextDateNumber <= mdh.getNumberOfDaysInMonth()); 
-		}
+				rv.setViewVisibility(identifier, mdh.isWithinCurrentMonth(i-1, j-1) ? View.VISIBLE : View.INVISIBLE);
+			}
 	}
 	
 }

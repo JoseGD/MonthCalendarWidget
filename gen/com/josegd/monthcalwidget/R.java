@@ -49,6 +49,7 @@ public final class R {
         public static final int date14=0x7f090029;
         public static final int date15=0x7f090031;
         public static final int date16=0x7f090039;
+        public static final int date17=0x7f090041;
         public static final int date20=0x7f09000a;
         public static final int date21=0x7f090012;
         public static final int date22=0x7f09001a;
@@ -56,6 +57,7 @@ public final class R {
         public static final int date24=0x7f09002a;
         public static final int date25=0x7f090032;
         public static final int date26=0x7f09003a;
+        public static final int date27=0x7f090043;
         public static final int date30=0x7f09000b;
         public static final int date31=0x7f090013;
         public static final int date32=0x7f09001b;
@@ -63,6 +65,7 @@ public final class R {
         public static final int date34=0x7f09002b;
         public static final int date35=0x7f090033;
         public static final int date36=0x7f09003b;
+        public static final int date37=0x7f090045;
         public static final int date40=0x7f09000c;
         public static final int date41=0x7f090014;
         public static final int date42=0x7f09001c;
@@ -70,6 +73,7 @@ public final class R {
         public static final int date44=0x7f09002c;
         public static final int date45=0x7f090034;
         public static final int date46=0x7f09003c;
+        public static final int date47=0x7f090047;
         public static final int date50=0x7f09000d;
         public static final int date51=0x7f090015;
         public static final int date52=0x7f09001d;
@@ -77,6 +81,14 @@ public final class R {
         public static final int date54=0x7f09002d;
         public static final int date55=0x7f090035;
         public static final int date56=0x7f09003d;
+        public static final int date57=0x7f090049;
+        public static final int date61=0x7f09004b;
+        public static final int date62=0x7f09004c;
+        public static final int date63=0x7f09004d;
+        public static final int date64=0x7f09004e;
+        public static final int date65=0x7f09004f;
+        public static final int date66=0x7f090050;
+        public static final int date67=0x7f090051;
         public static final int datesll=0x7f090005;
         public static final int day1=0x7f090007;
         public static final int day1_ll=0x7f090006;
@@ -92,23 +104,23 @@ public final class R {
         public static final int day6_ll=0x7f09002e;
         public static final int day7=0x7f090037;
         public static final int day7_ll=0x7f090036;
-        public static final int instructions_intro=0x7f090048;
-        public static final int instructions_text=0x7f090049;
-        public static final int instructions_title=0x7f090047;
-        public static final int main_instr_ll=0x7f090046;
+        public static final int instructions_intro=0x7f090054;
+        public static final int instructions_text=0x7f090055;
+        public static final int instructions_title=0x7f090053;
+        public static final int main_instr_ll=0x7f090052;
         public static final int mainll=0x7f090000;
         public static final int monthyear=0x7f090003;
-        public static final int more_info=0x7f09004a;
+        public static final int more_info=0x7f090056;
         public static final int navll=0x7f090001;
         public static final int navrl=0x7f09003e;
         public static final int nextmonth=0x7f090004;
         public static final int prevmonth=0x7f090002;
         public static final int week1ll=0x7f090040;
-        public static final int week2ll=0x7f090041;
-        public static final int week3ll=0x7f090042;
-        public static final int week4ll=0x7f090043;
-        public static final int week5ll=0x7f090044;
-        public static final int week6ll=0x7f090045;
+        public static final int week2ll=0x7f090042;
+        public static final int week3ll=0x7f090044;
+        public static final int week4ll=0x7f090046;
+        public static final int week5ll=0x7f090048;
+        public static final int week6ll=0x7f09004a;
         public static final int weekdaysll=0x7f09003f;
     }
     public static final class layout {
@@ -152,14 +164,14 @@ public final class R {
         public static final int Img_Arrows_4x3=0x7f080008;
         public static final int InstructionsTheme=0x7f080001;
         public static final int LL_DatesColumn=0x7f080004;
-        public static final int LL_DatesColumn_4x3=0x7f08000a;
-        public static final int LL_DatesColumn_4x3_WC=0x7f08000b;
+        public static final int LL_DatesColumn_4x3_WC=0x7f08000d;
         public static final int LL_DatesColumn_WC=0x7f080005;
+        public static final int LL_Week_4x3=0x7f08000b;
         public static final int SettingsTheme=0x7f080000;
         public static final int Text_DatesColumn=0x7f080007;
-        public static final int Text_Dates_4x3=0x7f08000d;
+        public static final int Text_Dates_4x3=0x7f08000c;
         public static final int Text_DaysOfWeek=0x7f080006;
-        public static final int Text_DaysOfWeek_4x3=0x7f08000c;
+        public static final int Text_DaysOfWeek_4x3=0x7f08000a;
         public static final int Text_MonthYear=0x7f080003;
         public static final int Text_MonthYear_4x3=0x7f080009;
     }
