@@ -3,13 +3,15 @@
 	android:id="@+id/mainll"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical"
-   android:layout_width="272dp" android:layout_height="wrap_content"
+   android:layout_width="272dp" android:layout_height="264dp"
    android:paddingLeft="6dp" android:paddingRight="6dp"
-   android:paddingBottom="12dp" android:background="@drawable/widget_bg">
+   android:paddingBottom="12dp" android:weightSum="66"
+   android:background="@drawable/widget_bg">
    <RelativeLayout
    	android:id="@+id/navrl"
       xmlns:android="http://schemas.android.com/apk/res/android"
-		android:layout_width="match_parent"	android:layout_height="wrap_content">
+		android:layout_width="match_parent"	android:layout_height="0dp"
+		android:layout_weight="12">
     	<TextView
          android:id="@+id/monthyear"
          style="@style/Text_MonthYear_4x3" android:focusable="true"/>
@@ -28,8 +30,9 @@
       android:id="@+id/weekdaysll"
       xmlns:android="http://schemas.android.com/apk/res/android"
       android:orientation="horizontal"
-      android:layout_width="match_parent" android:layout_height="wrap_content">
-      <TextView android:id="@+id/day1" style="@style/Text_DaysOfWeek_4x3"/>
+      android:layout_width="match_parent" android:layout_height="0dp"
+      android:layout_weight="6">
+   	<TextView android:id="@+id/day1" style="@style/Text_DaysOfWeek_4x3"/>
       <TextView android:id="@+id/day2" style="@style/Text_DaysOfWeek_4x3"/>
       <TextView android:id="@+id/day3" style="@style/Text_DaysOfWeek_4x3"/>
       <TextView android:id="@+id/day4" style="@style/Text_DaysOfWeek_4x3"/>
