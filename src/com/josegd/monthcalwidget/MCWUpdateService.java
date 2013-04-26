@@ -81,7 +81,7 @@ public class MCWUpdateService extends IntentService {
 	}
 
 	private static int defineLayout(String cClass, int initialLayoutId) {
-		int wrapContentlayout = cClass.equals(CLASS_NAME_3X2_WIDGET) ? R.layout.main_3x2_wc : R.layout.main_4x3_wc;
+		int wrapContentlayout = 0; // cClass.equals(CLASS_NAME_3X2_WIDGET) ? R.layout.main_3x2_wc : R.layout.main_4x3_wc;
 		return ph.autoAdjustableColumns() ? wrapContentlayout : initialLayoutId;
 	}
 	

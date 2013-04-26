@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
    xmlns:android="http://schemas.android.com/apk/res/android"
-   package="com.josegd.monthcalwidget" android:versionCode="5" android:versionName="@string/app_version">
+   package="com.josegd.monthcalwidget" android:versionCode="6" android:versionName="@string/app_version">
 
    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="13"/>
 
@@ -32,7 +32,7 @@
 	   <!-- Service -->
 		<service android:name=".MCWUpdateService" />
 		
-      <!-- Settings (Lint warning "Exported activity does not require permission" remains, see http://stackoverflow.com/q/11916590/858626 -->
+      <!-- Settings (Lint warning "Exported activity does not require permission" remains, see http://stackoverflow.com/q/11916590/858626) -->
       <activity
          android:name=".MCWSettings" android:label="@string/app_settings" android:theme="@style/SettingsTheme"> 
 			<intent-filter>

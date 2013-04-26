@@ -3,7 +3,8 @@
 	android:id="@+id/mainll"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical"
-   android:layout_width="272dp" android:layout_height="264dp"
+   android:layout_width="@dimen/widget_width_4x3"
+   android:layout_height="@dimen/widget_height_4x3"
    android:paddingLeft="6dp" android:paddingRight="6dp"
    android:paddingBottom="12dp" android:weightSum="66"
    android:background="@drawable/widget_bg">
@@ -18,12 +19,12 @@
       <ImageButton
          android:id="@+id/prevmonth"
          android:layout_alignParentLeft="true" android:paddingRight="30dp"
-         android:src="@drawable/selector_prev" style="@style/Img_Arrows_4x3"
+         android:src="@drawable/selector_prev" style="@style/Img_Arrow_4x3"
          android:contentDescription="@string/desc_prev" android:focusable="true" />
     	<ImageButton
          android:id="@+id/nextmonth"
          android:layout_alignParentRight="true" android:paddingLeft="30dp"
-         android:src="@drawable/selector_next" style="@style/Img_Arrows_4x3"
+         android:src="@drawable/selector_next" style="@style/Img_Arrow_4x3"
          android:contentDescription="@string/desc_next" android:focusable="true" />
    </RelativeLayout>
    <LinearLayout
@@ -43,7 +44,7 @@
    <LinearLayout
       android:id="@+id/week1ll"
       xmlns:android="http://schemas.android.com/apk/res/android"
-      android:orientation="horizontal" style="@style/LL_Week_4x3">
+      android:orientation="horizontal" style="@style/LL_Week">
       <TextView android:id="@+id/date11" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date12" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date13" style="@style/Text_Dates_4x3"/>
@@ -55,7 +56,7 @@
    <LinearLayout
       android:id="@+id/week2ll"
       xmlns:android="http://schemas.android.com/apk/res/android"
-      android:orientation="horizontal" style="@style/LL_Week_4x3">
+      android:orientation="horizontal" style="@style/LL_Week">
       <TextView android:id="@+id/date21" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date22" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date23" style="@style/Text_Dates_4x3"/>
@@ -67,7 +68,7 @@
    <LinearLayout
       android:id="@+id/week3ll"
       xmlns:android="http://schemas.android.com/apk/res/android"
-      android:orientation="horizontal" style="@style/LL_Week_4x3">
+      android:orientation="horizontal" style="@style/LL_Week">
       <TextView android:id="@+id/date31" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date32" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date33" style="@style/Text_Dates_4x3"/>
@@ -79,7 +80,7 @@
    <LinearLayout
       android:id="@+id/week4ll"
       xmlns:android="http://schemas.android.com/apk/res/android"
-      android:orientation="horizontal" style="@style/LL_Week_4x3">
+      android:orientation="horizontal" style="@style/LL_Week">
       <TextView android:id="@+id/date41" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date42" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date43" style="@style/Text_Dates_4x3"/>
@@ -91,7 +92,7 @@
    <LinearLayout
       android:id="@+id/week5ll"
       xmlns:android="http://schemas.android.com/apk/res/android"
-      android:orientation="horizontal" style="@style/LL_Week_4x3">
+      android:orientation="horizontal" style="@style/LL_Week">
       <TextView android:id="@+id/date51" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date52" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date53" style="@style/Text_Dates_4x3"/>
@@ -103,7 +104,7 @@
    <LinearLayout
       android:id="@+id/week6ll"
       xmlns:android="http://schemas.android.com/apk/res/android"
-      android:orientation="horizontal" style="@style/LL_Week_4x3">
+      android:orientation="horizontal" style="@style/LL_Week">
       <TextView android:id="@+id/date61" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date62" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date63" style="@style/Text_Dates_4x3"/>

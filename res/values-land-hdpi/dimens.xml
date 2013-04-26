@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <dimen name="widget_width_3x2">188dp</dimen>
+   <dimen name="widget_height_3x2">180dp</dimen>
+   <dimen name="widget_width_4x3">262dp</dimen>
+   <dimen name="widget_height_4x3">254dp</dimen>
+   <dimen name="month_year_3x2">16sp</dimen>
+   <dimen name="days_week_3x2">10sp</dimen>
+   <dimen name="dates_3x2">12sp</dimen>
+   <dimen name="month_year_4x3">22sp</dimen>
+   <dimen name="days_week_4x3">14sp</dimen>
+   <dimen name="dates_4x3">18sp</dimen>   
+</resources>
