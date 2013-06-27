@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-   <dimen name="widget_width_3x2">198dp</dimen>
+   <!-- Min widget sizes in appwidget-provider -->
+   <dimen name="widget_minwidth_3x2">220dp</dimen>
+   <dimen name="widget_minheight_3x2">146dp</dimen>
+   <dimen name="widget_minwidth_4x3">294dp</dimen>
+   <dimen name="widget_minheight_4x3">220dp</dimen>
+	<!-- Widget sizes -->
+	<dimen name="widget_width_3x2">198dp</dimen>
    <dimen name="widget_height_3x2">190dp</dimen>
    <dimen name="widget_width_4x3">272dp</dimen>
    <dimen name="widget_height_4x3">264dp</dimen>
+   <!-- Text sizes -->
    <dimen name="month_year_3x2">16sp</dimen>
    <dimen name="days_week_3x2">10sp</dimen>
    <dimen name="dates_3x2">12sp</dimen>

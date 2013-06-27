@@ -2,8 +2,8 @@
 <appwidget-provider
    xmlns:android="http://schemas.android.com/apk/res/android"
 	android:initialLayout="@layout/main_3x2"
-	android:minWidth="220dip"
-	android:minHeight="146dip"
+	android:minWidth="@dimen/widget_minwidth_3x2"
+	android:minHeight="@dimen/widget_minheight_3x2"
 	android:updatePeriodMillis="0"
    android:previewImage="@drawable/mcw_3x2_preview"
 	android:configure="com.josegd.monthcalwidget.MCWSettings"/>
