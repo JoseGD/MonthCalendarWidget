@@ -5,6 +5,7 @@ import java.util.Calendar;
 import android.app.IntentService;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
+import android.appwidget.AppWidgetProviderInfo;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -55,8 +56,11 @@ public class MCWUpdateService extends IntentService {
 		final int N = appWidgetIds.length;
 		for (int i = 0; i < N; i++) {
 			int appWidgetId = appWidgetIds[i];
-			RemoteViews remViews = buildUpdate(context, mgr.getAppWidgetInfo(appWidgetId).initialLayout, cClass);
-			mgr.updateAppWidget(appWidgetId, remViews);
+			AppWidgetProviderInfo awpi = mgr.getAppWidgetInfo(appWidgetId);
+			if (awpi != null) {
+				RemoteViews remViews = buildUpdate(context, awpi.initialLayout, cClass);
+				mgr.updateAppWidget(appWidgetId, remViews);
+			}
 		}
 	}
 
