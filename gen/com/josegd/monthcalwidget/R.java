@@ -130,27 +130,25 @@ public final class R {
         public static final int main_instructions=0x7f030002;
     }
     public static final class string {
-        public static final int about_settings=0x7f070011;
+        public static final int about_settings=0x7f07000f;
         public static final int app_name=0x7f070001;
         public static final int app_settings=0x7f070007;
         public static final int app_version=0x7f070002;
         public static final int desc_next=0x7f070006;
         public static final int desc_prev=0x7f070005;
-        public static final int feedback=0x7f07000c;
-        public static final int instructions_intro=0x7f070015;
+        public static final int feedback=0x7f07000a;
+        public static final int instructions_intro=0x7f070013;
         public static final int instructions_text=0x7f070000;
-        public static final int more_info=0x7f070016;
+        public static final int more_info=0x7f070014;
         public static final int options=0x7f070008;
-        public static final int summary_adjustcolumns=0x7f07000b;
-        public static final int summary_contactdev=0x7f07000e;
-        public static final int summary_donate=0x7f070010;
-        public static final int summary_website=0x7f070013;
+        public static final int summary_contactdev=0x7f07000c;
+        public static final int summary_donate=0x7f07000e;
+        public static final int summary_website=0x7f070011;
         public static final int title_FDW=0x7f070009;
-        public static final int title_adjustcolumns=0x7f07000a;
-        public static final int title_contactdev=0x7f07000d;
-        public static final int title_donate=0x7f07000f;
-        public static final int title_version=0x7f070014;
-        public static final int title_website=0x7f070012;
+        public static final int title_contactdev=0x7f07000b;
+        public static final int title_donate=0x7f07000d;
+        public static final int title_version=0x7f070012;
+        public static final int title_website=0x7f070010;
         public static final int widget_3x2=0x7f070003;
         public static final int widget_4x3=0x7f070004;
     }

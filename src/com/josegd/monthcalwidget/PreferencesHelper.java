@@ -8,7 +8,6 @@ public class PreferencesHelper {
 
 	private SharedPreferences prefs;
 	private String FDW_PREFERENCE = "first_day_week";
-	private String AAC_PREFERENCE = "adjust_columns";
 	private String CAL_SUNDAY = "1";
 	
 	public PreferencesHelper(Context ctx) {
@@ -20,7 +19,4 @@ public class PreferencesHelper {
 		return Integer.parseInt(prefs.getString(FDW_PREFERENCE, CAL_SUNDAY));
 	}
 	
-	public boolean autoAdjustableColumns() {
-		return prefs.getBoolean(AAC_PREFERENCE, false);
-	}
 }

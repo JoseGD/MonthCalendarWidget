@@ -14,7 +14,7 @@ import android.widget.RemoteViews;
 public class MCWUpdateService extends IntentService {
 
 	public static String UPD_AFTER_SETTINGS = "com.josegd.monthcalwidget.APPWIDGET_UPDATE_AFTER_SETTINGS";
-	public static String CLASS_NAME_3X2_WIDGET = "com.josegd.monthcalwidget.MonthCalWidget3x2";
+	
 	public static int yearNow;
 	public static int monthNow;
 	public static int today;
@@ -65,8 +65,7 @@ public class MCWUpdateService extends IntentService {
 	}
 
 	private static RemoteViews buildUpdate(Context context, int layoutId, String cClass) {
-		//
-		RemoteViews views = new RemoteViews(context.getPackageName(), defineLayout(cClass, layoutId));
+		RemoteViews views = new RemoteViews(context.getPackageName(), layoutId);
 		try {
 			setViewAction(context, views, MonthCalWidget.WIDGET_CLICK_NEXT, R.id.nextmonth, cClass);
 			setViewAction(context, views, MonthCalWidget.WIDGET_CLICK_PREV, R.id.prevmonth, cClass);
@@ -84,11 +83,6 @@ public class MCWUpdateService extends IntentService {
 		rv.setOnClickPendingIntent(idView, PendingIntent.getBroadcast(cont, 0, intent, 0));
 	}
 
-	private static int defineLayout(String cClass, int initialLayoutId) {
-		int wrapContentlayout = 0; // cClass.equals(CLASS_NAME_3X2_WIDGET) ? R.layout.main_3x2_wc : R.layout.main_4x3_wc;
-		return ph.autoAdjustableColumns() ? wrapContentlayout : initialLayoutId;
-	}
-	
 }
 
 
