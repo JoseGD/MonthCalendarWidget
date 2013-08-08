@@ -23,23 +23,33 @@ public final class R {
         public static final int white=0x7f050000;
     }
     public static final class dimen {
-        public static final int dates_3x2=0x7f06000a;
-        public static final int dates_4x3=0x7f06000d;
-        public static final int days_week_3x2=0x7f060009;
-        public static final int days_week_4x3=0x7f06000c;
+        public static final int dates_3x2=0x7f06000e;
+        public static final int dates_4x3=0x7f060011;
+        public static final int days_week_3x2=0x7f06000d;
+        public static final int days_week_4x3=0x7f060010;
         /**  Text sizes 
+ Text sizes 
          */
-        public static final int month_year_3x2=0x7f060008;
-        public static final int month_year_4x3=0x7f06000b;
+        public static final int month_year_3x2=0x7f06000c;
+        public static final int month_year_4x3=0x7f06000f;
         public static final int widget_height_3x2=0x7f060005;
         public static final int widget_height_4x3=0x7f060007;
         public static final int widget_minheight_3x2=0x7f060001;
         public static final int widget_minheight_4x3=0x7f060003;
-        /**  Min widget sizes in appwidget-provider 
+        /**  Min widget sizes in appwidget-provider (pre-ICS formula) 
+ Min widget sizes in appwidget-provider (ICS formula) 
          */
         public static final int widget_minwidth_3x2=0x7f060000;
         public static final int widget_minwidth_4x3=0x7f060002;
+        public static final int widget_paddingB_3x2=0x7f060009;
+        public static final int widget_paddingB_4x3=0x7f06000b;
+        /**  Widget padding 
+ Widget padding 
+         */
+        public static final int widget_paddingLR_3x2=0x7f060008;
+        public static final int widget_paddingLR_4x3=0x7f06000a;
         /**  Widget sizes 
+ Widget sizes 
          */
         public static final int widget_width_3x2=0x7f060004;
         public static final int widget_width_4x3=0x7f060006;

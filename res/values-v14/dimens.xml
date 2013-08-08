@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-   <!-- Min widget sizes in appwidget-provider (pre-ICS formula) -->
-   <dimen name="widget_minwidth_3x2">220dp</dimen>
-   <dimen name="widget_minheight_3x2">146dp</dimen>
-   <dimen name="widget_minwidth_4x3">294dp</dimen>
-   <dimen name="widget_minheight_4x3">220dp</dimen>
+   <!-- Min widget sizes in appwidget-provider (ICS formula) -->
+   <dimen name="widget_minwidth_3x2">180dp</dimen>
+   <dimen name="widget_minheight_3x2">110dp</dimen>
+   <dimen name="widget_minwidth_4x3">250dp</dimen>
+   <dimen name="widget_minheight_4x3">180dp</dimen>
 	<!-- Widget sizes -->
-	<dimen name="widget_width_3x2">198dp</dimen>
-   <dimen name="widget_height_3x2">190dp</dimen>
-   <dimen name="widget_width_4x3">272dp</dimen>
-   <dimen name="widget_height_4x3">264dp</dimen>
+	<dimen name="widget_width_3x2">192dp</dimen>
+   <dimen name="widget_height_3x2">184dp</dimen>
+   <dimen name="widget_width_4x3">266dp</dimen>
+   <dimen name="widget_height_4x3">258dp</dimen>
    <!-- Widget padding -->
    <dimen name="widget_paddingLR_3x2">6dp</dimen>
    <dimen name="widget_paddingB_3x2">9dp</dimen>

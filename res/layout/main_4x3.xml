@@ -5,12 +5,12 @@
 	android:orientation="vertical"
    android:layout_width="@dimen/widget_width_4x3"
    android:layout_height="@dimen/widget_height_4x3"
-   android:paddingLeft="6dp" android:paddingRight="6dp"
-   android:paddingBottom="12dp" android:weightSum="66"
-   android:background="@drawable/widget_bg">
+   android:paddingLeft="@dimen/widget_paddingLR_4x3"
+   android:paddingRight="@dimen/widget_paddingLR_4x3"
+   android:paddingBottom="@dimen/widget_paddingB_4x3"
+   android:weightSum="66" android:background="@drawable/widget_bg">
    <RelativeLayout
    	android:id="@+id/navrl"
-      xmlns:android="http://schemas.android.com/apk/res/android"
 		android:layout_width="match_parent"	android:layout_height="0dp"
 		android:layout_weight="12">
     	<TextView
@@ -29,7 +29,6 @@
    </RelativeLayout>
    <LinearLayout
       android:id="@+id/weekdaysll"
-      xmlns:android="http://schemas.android.com/apk/res/android"
       android:orientation="horizontal"
       android:layout_width="match_parent" android:layout_height="0dp"
       android:layout_weight="6">
@@ -43,7 +42,6 @@
    </LinearLayout>
    <LinearLayout
       android:id="@+id/week1ll"
-      xmlns:android="http://schemas.android.com/apk/res/android"
       android:orientation="horizontal" style="@style/LL_Week">
       <TextView android:id="@+id/date11" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date12" style="@style/Text_Dates_4x3"/>
@@ -55,7 +53,6 @@
    </LinearLayout>
    <LinearLayout
       android:id="@+id/week2ll"
-      xmlns:android="http://schemas.android.com/apk/res/android"
       android:orientation="horizontal" style="@style/LL_Week">
       <TextView android:id="@+id/date21" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date22" style="@style/Text_Dates_4x3"/>
@@ -67,7 +64,6 @@
    </LinearLayout>
    <LinearLayout
       android:id="@+id/week3ll"
-      xmlns:android="http://schemas.android.com/apk/res/android"
       android:orientation="horizontal" style="@style/LL_Week">
       <TextView android:id="@+id/date31" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date32" style="@style/Text_Dates_4x3"/>
@@ -79,7 +75,6 @@
    </LinearLayout>
    <LinearLayout
       android:id="@+id/week4ll"
-      xmlns:android="http://schemas.android.com/apk/res/android"
       android:orientation="horizontal" style="@style/LL_Week">
       <TextView android:id="@+id/date41" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date42" style="@style/Text_Dates_4x3"/>
@@ -91,7 +86,6 @@
    </LinearLayout>
    <LinearLayout
       android:id="@+id/week5ll"
-      xmlns:android="http://schemas.android.com/apk/res/android"
       android:orientation="horizontal" style="@style/LL_Week">
       <TextView android:id="@+id/date51" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date52" style="@style/Text_Dates_4x3"/>
@@ -103,7 +97,6 @@
    </LinearLayout>
    <LinearLayout
       android:id="@+id/week6ll"
-      xmlns:android="http://schemas.android.com/apk/res/android"
       android:orientation="horizontal" style="@style/LL_Week">
       <TextView android:id="@+id/date61" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date62" style="@style/Text_Dates_4x3"/>
