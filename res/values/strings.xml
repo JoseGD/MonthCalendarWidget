@@ -33,6 +33,14 @@
 	 <string name="summary_website">http://mobiledevjourney.blogspot.com</string>
     <string name="title_version">Version</string>
     
-    <string name="instructions_intro">The app was installed successfully. To put it on your home screen follow these steps:</string>
-    <string name="more_info">You can find more information about installing the widget &lt;a href="http://mobiledevjourney.blogspot.com/2013/02/how-to-put-month-calendar-widget-on.html">here&lt;/a></string>
+    <string name="instructions_intro">This calendar is a <b>home screen widget</b>, an Android view that you place on the home screen and use right there.</string>
+    <string name="instr_sampleHS_description">A 3x2 widget ready to work</string>
+    <string name="show_instructions">How to use it</string>
+    <string name="instructions_shown">(Tap to dismiss)</string>
+    <string name="instructions_towork_1"><b>1.</b> Choose where on the home screen you want it</string>
+    <string name="instructions_towork_2"><b>2.</b> Find <b>Month Calendar Widget</b> in the widget list (touch and hold screen, Widgets option in menu)</string>
+    <string name="instructions_towork_3"><b>3.</b> Select one of two sizes (3x2 or 4x3)</string>
+    <string name="instructions_towork_4"><b>4.</b> Adjust settings, press <b>Back</b> to exit</string>
+    <string name="instructions_navigation">Use <b>arrows</b> for previous/next month. Tap <b>month/year</b> for current month.</string>
+    <string name="instructions_morehelp">Need more help? Find it &lt;a href="http://mobiledevjourney.blogspot.com/2013/02/how-to-put-month-calendar-widget-on.html">here&lt;/a></string>
 </resources>

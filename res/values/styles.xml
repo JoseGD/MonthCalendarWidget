@@ -5,11 +5,17 @@
       <item name="android:windowBackground">@color/settings_background</item>
       <item name="android:windowContentOverlay">@null</item>
    </style>    
-	<style name="InstructionsTheme" parent="@android:style/Theme.NoTitleBar">
-	   <item name="android:windowIsTranslucent">true</item>
-      <item name="android:windowBackground">@color/instructions_background</item>
-      <item name="android:windowContentOverlay">@null</item>
-	</style>    
+	<style name="InstructionsTheme" parent="android:Theme.NoTitleBar">
+	</style>
+   <style name="Instructions_Font">
+		<item name="android:layout_width">match_parent</item>		
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:padding">@dimen/instr_steppadding</item>
+      <item name="android:textSize">@dimen/instr_textsize_2</item>
+      <item name="android:typeface">sans</item>
+      <item name="android:textColor">@color/white</item>
+      <item name="android:background">@color/instrsteps_background</item>
+   </style>
    <!-- 3x2 -->
 	<style name="Img_Arrow">
 	 	<item name="android:background">@null</item>

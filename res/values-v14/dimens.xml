@@ -10,16 +10,4 @@
    <dimen name="widget_height_3x2">184dp</dimen>
    <dimen name="widget_width_4x3">266dp</dimen>
    <dimen name="widget_height_4x3">258dp</dimen>
-   <!-- Widget padding -->
-   <dimen name="widget_paddingLR_3x2">6dp</dimen>
-   <dimen name="widget_paddingB_3x2">9dp</dimen>
-   <dimen name="widget_paddingLR_4x3">6dp</dimen>
-   <dimen name="widget_paddingB_4x3">12dp</dimen>
-   <!-- Text sizes -->
-   <dimen name="month_year_3x2">16sp</dimen>
-   <dimen name="days_week_3x2">10sp</dimen>
-   <dimen name="dates_3x2">12sp</dimen>
-   <dimen name="month_year_4x3">22sp</dimen>
-   <dimen name="days_week_4x3">14sp</dimen>
-   <dimen name="dates_4x3">18sp</dimen>   
 </resources>

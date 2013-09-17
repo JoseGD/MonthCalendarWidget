@@ -1,33 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
    xmlns:android="http://schemas.android.com/apk/res/android"
-   android:id="@+id/main_instr_ll"
+   android:id="@+id/main_instr_rl"
    android:layout_width="match_parent" android:layout_height="match_parent"
-   android:orientation="vertical">
-
+   android:padding="20dp">
    <TextView
-      android:id="@+id/instructions_title"
+      android:id="@+id/instr_intro"
       android:layout_width="match_parent" android:layout_height="wrap_content"
-      android:layout_margin="10dp"
-      android:textSize="24sp" android:textStyle="bold"
-      android:textColor="@color/white" android:text="@string/app_name"/>
-
-   <TextView
-      android:id="@+id/instructions_intro"
+      android:layout_marginBottom="10dp"
+      android:typeface="sans" android:textSize="@dimen/instr_textsize_1"
+      android:textColor="@color/white" android:text="@string/instructions_intro"/>
+	<ImageView
+      android:id="@+id/sample_homescreen"
       android:layout_width="match_parent" android:layout_height="wrap_content"
-      android:layout_margin="10dp"
-      android:textSize="16sp" android:text="@string/instructions_intro"/>
-   
+      android:layout_below="@id/instr_intro" android:layout_above="@+id/instr_sampleHS_descr"
+      android:src="@drawable/mcw_instr_3x2" android:contentDescription="@string/instr_sampleHS_description"/>
+	<Button
+		android:id="@+id/showinstr_btn"
+		android:layout_width="@dimen/instr_btnwidth" android:layout_height="wrap_content"
+		android:layout_below="@id/instr_intro"
+		android:layout_marginLeft="10dp" android:layout_marginTop="20dp" 
+		android:padding="8dp" android:textSize="@dimen/instr_textsize_1"
+      android:background="@color/instr_button" android:textColor="@color/white"
+      android:text="@string/show_instructions" android:onClick="showInstructions" />
+	<ScrollView
+      android:id="@+id/instr_howtouse_sv"
+      android:layout_width="@dimen/instr_svsize" android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/showinstr_btn" android:layout_alignTop="@id/showinstr_btn"
+      android:layout_above="@+id/instr_sampleHS_descr" android:paddingLeft="4dp"
+      android:visibility="invisible">
+      <TableLayout
+         android:id="@+id/instr_howtouse_tl"
+         android:layout_width="match_parent" android:layout_height="wrap_content">
+			<TextView
+			   android:id="@+id/instr_towork1"
+			   style="@style/Instructions_Font"
+			   android:text="@string/instructions_towork_1" />
+			<TextView
+			   android:id="@+id/instr_towork2"
+			   style="@style/Instructions_Font"
+			   android:text="@string/instructions_towork_2" />
+			<TextView
+			   android:id="@+id/instr_towork3"
+			   style="@style/Instructions_Font"
+			   android:text="@string/instructions_towork_3" />
+			<TextView
+			   android:id="@+id/instr_towork4"
+			   style="@style/Instructions_Font"
+			   android:text="@string/instructions_towork_4" />
+			<TextView
+			   android:id="@+id/instr_nav"
+			   style="@style/Instructions_Font"
+			   android:text="@string/instructions_navigation" />
+			<TextView
+			   android:id="@+id/instr_morehelp"
+			   style="@style/Instructions_Font"
+			   android:text="@string/instructions_morehelp"/>
+      </TableLayout>
+   </ScrollView>
    <TextView
-      android:id="@+id/instructions_text"
+      android:id="@id/instr_sampleHS_descr"
       android:layout_width="wrap_content" android:layout_height="wrap_content"
-      android:layout_marginLeft="30dp" android:layout_marginRight="20dp" android:gravity="left"
-      android:textSize="16sp" android:text="@string/instructions_text"/>
-
-   <TextView
-      android:id="@+id/more_info"
-      android:layout_width="match_parent" android:layout_height="wrap_content"
-      android:layout_margin="10dp"
-      android:textSize="16sp" android:text="@string/more_info"/>
-   
-</LinearLayout>
+      android:layout_centerHorizontal="true" android:layout_alignParentBottom="true"
+      android:layout_marginTop="4dp" android:gravity="center_horizontal"
+      android:typeface="sans" android:textStyle="italic"
+      android:textSize="@dimen/instr_textsize_2" android:textColor="@color/white"
+      android:text="@string/instr_sampleHS_description"/>
+</RelativeLayout>

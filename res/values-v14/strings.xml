@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="instructions_towork_2"><b>2.</b> Find <b>Month Calendar Widget</b> in the widget list (Widgets tab in the app drawer)</string>
+    <string name="instructions_towork_3"><b>3.</b> Drag one of two sizes (3x2 or 4x3) onto the screen</string>
+</resources>

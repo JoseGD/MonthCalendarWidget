@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- Instructions sizes -->
+   <dimen name="instr_textsize_1">22sp</dimen>
+   <dimen name="instr_textsize_2">18sp</dimen>
+   <dimen name="instr_btnwidth">120dp</dimen>
+   <dimen name="instr_svsize">320dp</dimen>
+   <dimen name="instr_steppadding">12dp</dimen>
+</resources>
