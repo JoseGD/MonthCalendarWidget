@@ -48,6 +48,8 @@ public final class R {
  Min widget sizes in appwidget-provider (ICS formula) 
          */
         public static final int widget_minwidth_3x2=0x7f060000;
+        /**  Min widget sizes in appwidget-provider (ICS formula) 
+         */
         public static final int widget_minwidth_4x3=0x7f060002;
         public static final int widget_paddingB_3x2=0x7f060009;
         public static final int widget_paddingB_4x3=0x7f06000b;

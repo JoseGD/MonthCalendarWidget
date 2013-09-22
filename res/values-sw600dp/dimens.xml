@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+   <!-- Min widget sizes in appwidget-provider (ICS formula) -->
+   <dimen name="widget_minwidth_4x3">275dp</dimen>
    <!-- Instructions sizes -->
    <dimen name="instr_textsize_1">22sp</dimen>
    <dimen name="instr_textsize_2">18sp</dimen>
