@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Month Calendar Widget</string>
-    <string name="app_version">1.4.5</string>
+    <string name="app_version">1.5.0</string>
     <string name="widget_3x2">Month Calendar Widget 3x2</string>
     <string name="widget_4x3">Month Calendar Widget 4x3</string>
     <string name="desc_prev">Previous month</string>
@@ -21,12 +21,14 @@
 		<item>2</item>
 		<item>7</item>		
 	 </string-array>
+	 <string name="title_stretch_widget">Stretch widget</string>
+    <string name="summary_stretch_widget">Use all assigned space on home screen</string>
     
     <string name="feedback">Feedback</string>
 	 <string name="title_contactdev">Contact the developer</string>
 	 <string name="summary_contactdev">Email your comments, feature suggestions and bug reports</string>
 	 <string name="title_donate">Donate</string>
-	 <string name="summary_donate">If you like this app, you can support the developer\'s efforts making a donation</string>
+	 <string name="summary_donate">Support the developer\'s efforts with a donation</string>
     	 
     <string name="about_settings">About this app</string>
     <string name="title_website">Website</string>

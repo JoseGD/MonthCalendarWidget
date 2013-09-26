@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-   <style name="SettingsTheme">
-      <item name="android:windowIsTranslucent">true</item>
-      <item name="android:windowBackground">@color/settings_background</item>
-      <item name="android:windowContentOverlay">@null</item>
-   </style>    
+   <style name="SettingsTheme" parent="android:Theme.Black">
+   </style>
 	<style name="InstructionsTheme" parent="android:Theme.NoTitleBar">
 	</style>
    <style name="Instructions_Font">

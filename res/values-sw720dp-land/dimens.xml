@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Widget sizes -->
+	<dimen name="widget_width_3x2">206dp</dimen>
+   <dimen name="widget_height_3x2">184dp</dimen>
+   <dimen name="widget_width_4x3">280dp</dimen>
+   <dimen name="widget_height_4x3">258dp</dimen>
+</resources>

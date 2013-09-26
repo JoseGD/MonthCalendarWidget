@@ -11,10 +11,11 @@
    <dimen name="widget_width_4x3">272dp</dimen>
    <dimen name="widget_height_4x3">264dp</dimen>
    <!-- Widget padding -->
-   <dimen name="widget_paddingLR_3x2">6dp</dimen>
-   <dimen name="widget_paddingB_3x2">9dp</dimen>
-   <dimen name="widget_paddingLR_4x3">6dp</dimen>
-   <dimen name="widget_paddingB_4x3">12dp</dimen>
+   <dimen name="widget_padding">8dp</dimen>
+   <dimen name="calendar_paddingLR_3x2">6dp</dimen>
+   <dimen name="calendar_paddingB_3x2">9dp</dimen>
+   <dimen name="calendar_paddingLR_4x3">6dp</dimen>
+   <dimen name="calendar_paddingB_4x3">12dp</dimen>
    <!-- Widget text sizes -->
    <dimen name="month_year_3x2">16sp</dimen>
    <dimen name="days_week_3x2">10sp</dimen>

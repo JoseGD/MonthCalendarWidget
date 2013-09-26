@@ -14,6 +14,7 @@ import android.widget.RemoteViews;
 public class MCWUpdateService extends IntentService {
 
 	public static String UPD_AFTER_SETTINGS = "com.josegd.monthcalwidget.APPWIDGET_UPDATE_AFTER_SETTINGS";
+	public static String CLASS_NAME_3X2_WIDGET = "com.josegd.monthcalwidget.MonthCalWidget3x2";
 	
 	public static int yearNow;
 	public static int monthNow;
@@ -53,12 +54,16 @@ public class MCWUpdateService extends IntentService {
 		ComponentName widget = new ComponentName(context, cClass);
 		AppWidgetManager mgr = AppWidgetManager.getInstance(context);
 		int[] appWidgetIds = mgr.getAppWidgetIds(widget);
+		int wideLayout = 0;
+		if (ph.stretchedWidgetPreferred())
+			wideLayout = cClass.equals(CLASS_NAME_3X2_WIDGET) ? R.layout.main_3x2_wide : R.layout.main_4x3_wide;
 		final int N = appWidgetIds.length;
 		for (int i = 0; i < N; i++) {
 			int appWidgetId = appWidgetIds[i];
 			AppWidgetProviderInfo awpi = mgr.getAppWidgetInfo(appWidgetId);
+			int layout = ph.stretchedWidgetPreferred() ? wideLayout : awpi.initialLayout;
 			if (awpi != null) {
-				RemoteViews remViews = buildUpdate(context, awpi.initialLayout, cClass);
+				RemoteViews remViews = buildUpdate(context, layout, cClass);
 				mgr.updateAppWidget(appWidgetId, remViews);
 			}
 		}

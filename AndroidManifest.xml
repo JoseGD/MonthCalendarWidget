@@ -34,7 +34,7 @@
 		
       <!-- Settings (Lint warning "Exported activity does not require permission" remains, see http://stackoverflow.com/q/11916590/858626) -->
       <activity
-         android:name=".MCWSettings" android:label="@string/app_settings" android:theme="@style/SettingsTheme"> 
+         android:name=".MCWSettings" android:theme="@style/SettingsTheme" android:label="@string/app_settings"> 
 			<intent-filter>
             <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
          </intent-filter>
@@ -51,4 +51,4 @@
 	    
    </application>
 
-</manifest> 
+</manifest>

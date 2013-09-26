@@ -8,6 +8,7 @@ public class PreferencesHelper {
 
 	private SharedPreferences prefs;
 	private String FDW_PREFERENCE = "first_day_week";
+	private String WW_PREFERENCE  = "stretch_widget";
 	private String CAL_SUNDAY = "1";
 	
 	public PreferencesHelper(Context ctx) {
@@ -17,6 +18,10 @@ public class PreferencesHelper {
 	public int firstDayOfWeek() {
 		 // Cannot use getInt because of unresolved issue 2096 (http://code.google.com/p/android/issues/detail?id=2096)
 		return Integer.parseInt(prefs.getString(FDW_PREFERENCE, CAL_SUNDAY));
+	}
+	
+	public boolean stretchedWidgetPreferred() {
+		return prefs.getBoolean(WW_PREFERENCE, false);
 	}
 	
 }

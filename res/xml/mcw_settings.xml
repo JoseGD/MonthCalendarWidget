@@ -5,10 +5,13 @@
   		<ListPreference
 			android:key="first_day_week"
 			android:title="@string/title_FDW"
-			android:entries="@array/days_FDW"
-			android:entryValues="@array/values_FDW"
-			android:defaultValue="1"
-			android:dialogTitle="@string/title_FDW" />
+			android:entries="@array/days_FDW" android:entryValues="@array/values_FDW"
+			android:defaultValue="1" android:dialogTitle="@string/title_FDW" />
+  		<CheckBoxPreference
+  			android:key="stretch_widget"
+  			android:title="@string/title_stretch_widget"
+         android:summary="@string/summary_stretch_widget"
+         android:defaultValue="false"/>
    </PreferenceCategory>
   		
    <PreferenceCategory android:title="@string/feedback">

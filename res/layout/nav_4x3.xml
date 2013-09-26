@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"     
+   android:id="@+id/navrl"
+   android:layout_width="match_parent" android:layout_height="0dp"
+   android:layout_weight="12">
+   <TextView
+      android:id="@+id/monthyear"
+      style="@style/Text_MonthYear_4x3" android:focusable="true"/>
+   <ImageButton
+      android:id="@+id/prevmonth"
+      android:layout_alignParentLeft="true" android:paddingRight="30dp"
+      android:src="@drawable/selector_prev" style="@style/Img_Arrow_4x3"
+      android:contentDescription="@string/desc_prev" android:focusable="true" />
+   <ImageButton
+      android:id="@+id/nextmonth"
+      android:layout_alignParentRight="true" android:paddingLeft="30dp"
+      android:src="@drawable/selector_next" style="@style/Img_Arrow_4x3"
+      android:contentDescription="@string/desc_next" android:focusable="true" />
+</RelativeLayout>

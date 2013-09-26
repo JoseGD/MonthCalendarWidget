@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+   <LinearLayout
+      android:id="@+id/week1ll"
+      android:orientation="horizontal" style="@style/LL_Week">
+      <TextView android:id="@+id/date11" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date12" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date13" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date14" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date15" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date16" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date17" style="@style/Text_Dates_4x3"/>
+   </LinearLayout>
+   <LinearLayout
+      android:id="@+id/week2ll"
+      android:orientation="horizontal" style="@style/LL_Week">
+      <TextView android:id="@+id/date21" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date22" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date23" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date24" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date25" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date26" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date27" style="@style/Text_Dates_4x3"/>
+   </LinearLayout>
+   <LinearLayout
+      android:id="@+id/week3ll"
+      android:orientation="horizontal" style="@style/LL_Week">
+      <TextView android:id="@+id/date31" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date32" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date33" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date34" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date35" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date36" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date37" style="@style/Text_Dates_4x3"/>
+   </LinearLayout>
+   <LinearLayout
+      android:id="@+id/week4ll"
+      android:orientation="horizontal" style="@style/LL_Week">
+      <TextView android:id="@+id/date41" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date42" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date43" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date44" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date45" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date46" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date47" style="@style/Text_Dates_4x3"/>
+   </LinearLayout>
+   <LinearLayout
+      android:id="@+id/week5ll"
+      android:orientation="horizontal" style="@style/LL_Week">
+      <TextView android:id="@+id/date51" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date52" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date53" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date54" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date55" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date56" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date57" style="@style/Text_Dates_4x3"/>
+   </LinearLayout>
+   <LinearLayout
+      android:id="@+id/week6ll"
+      android:orientation="horizontal" style="@style/LL_Week">
+      <TextView android:id="@+id/date61" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date62" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date63" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date64" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date65" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date66" style="@style/Text_Dates_4x3"/>
+      <TextView android:id="@+id/date67" style="@style/Text_Dates_4x3"/>
+   </LinearLayout>
+</merge>

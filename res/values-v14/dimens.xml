@@ -5,9 +5,6 @@
    <dimen name="widget_minheight_3x2">110dp</dimen>
    <dimen name="widget_minwidth_4x3">250dp</dimen>
    <dimen name="widget_minheight_4x3">180dp</dimen>
-	<!-- Widget sizes -->
-	<dimen name="widget_width_3x2">192dp</dimen>
-   <dimen name="widget_height_3x2">184dp</dimen>
-   <dimen name="widget_width_4x3">266dp</dimen>
-   <dimen name="widget_height_4x3">258dp</dimen>
+   <!-- Widget padding -->
+   <dimen name="widget_padding">0dp</dimen>
 </resources>

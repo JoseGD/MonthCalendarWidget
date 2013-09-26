@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"     
+   android:id="@+id/weekdaysll"
+   android:orientation="horizontal"
+   android:layout_width="match_parent" android:layout_height="0dp"
+   android:layout_weight="6">
+   <TextView android:id="@+id/day1" style="@style/Text_DaysOfWeek_4x3"/>
+   <TextView android:id="@+id/day2" style="@style/Text_DaysOfWeek_4x3"/>
+   <TextView android:id="@+id/day3" style="@style/Text_DaysOfWeek_4x3"/>
+   <TextView android:id="@+id/day4" style="@style/Text_DaysOfWeek_4x3"/>
+   <TextView android:id="@+id/day5" style="@style/Text_DaysOfWeek_4x3"/>
+   <TextView android:id="@+id/day6" style="@style/Text_DaysOfWeek_4x3"/>
+   <TextView android:id="@+id/day7" style="@style/Text_DaysOfWeek_4x3"/>
+</LinearLayout>
