@@ -16,9 +16,20 @@ import android.widget.RemoteViews;
 public class CalendarFillingHelper {
 	
 	private MonthDisplayHelper mdh;
+	private PreferencesHelper ph;
 
-	public CalendarFillingHelper(MonthDisplayHelper month) {
+	public CalendarFillingHelper(MonthDisplayHelper month, PreferencesHelper prefs) {
 		mdh = month;
+		ph = prefs;
+	}
+	
+	public void fillCalendar(Context cont, RemoteViews rv) {
+		// Month and year (title)
+		rv.setTextViewText(R.id.monthyear, getMonthYearString()); 
+		// Dates (grid)
+		setWeekDays(cont, rv);
+		clearDatesGrid(cont, rv);
+		refillDatesGrid(cont, rv);
 	}
 	
 	@SuppressLint("SimpleDateFormat")
@@ -50,15 +61,6 @@ public class CalendarFillingHelper {
 		return strWeekDay;
 	}
 	
-	public void fillCalendar(Context cont, RemoteViews rv) {
-		// Month and year (title)
-		rv.setTextViewText(R.id.monthyear, getMonthYearString()); 
-		// Dates (grid)
-		setWeekDays(cont, rv);
-		clearDatesGrid(cont, rv);
-		refillDatesGrid(cont, rv);
-	}
-	
 	private void setWeekDays(Context cont, RemoteViews rv) {
 		int identifier;
 		for (int i = 1; i <= 7; i++) {
@@ -85,7 +87,8 @@ public class CalendarFillingHelper {
 			for (int j = 1; j <= 7; j++) {
 				dateNumber = mdh.getDayAt(i-1, j-1);
 				identifier = cont.getResources().getIdentifier("date" + i + j, "id", cont.getPackageName());
-				isToday = mdh.getYear() == MCWUpdateService.yearNow && mdh.getMonth() == MCWUpdateService.monthNow &&
+				isToday = mdh.getYear() == MCWUpdateService.yearNow &&
+							 mdh.getMonth() == MCWUpdateService.monthNow &&
 							 dateNumber == MCWUpdateService.today && mdh.isWithinCurrentMonth(i-1, j-1);
 				if (Build.VERSION.SDK_INT >= 8) {
 					rv.setInt(identifier, "setBackgroundResource", isToday ? R.color.today : android.R.color.transparent);
@@ -98,7 +101,13 @@ public class CalendarFillingHelper {
 						ssb.setSpan(new BackgroundColorSpan(cont.getResources().getColor(R.color.today)), 0, dateNumberStr.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 					rv.setTextViewText(identifier, ssb);
 				}
-				rv.setViewVisibility(identifier, mdh.isWithinCurrentMonth(i-1, j-1) ? View.VISIBLE : View.INVISIBLE);
+				if (mdh.isWithinCurrentMonth(i-1, j-1)) {
+					rv.setTextColor(identifier, cont.getResources().getColor(R.color.white));
+					rv.setViewVisibility(identifier, View.VISIBLE);
+				} else {
+					rv.setTextColor(identifier, cont.getResources().getColor(R.color.gray));
+					rv.setViewVisibility(identifier, ph.showDaysPrevNextMonths() ? View.VISIBLE : View.INVISIBLE);
+				}
 			}
 	}
 	

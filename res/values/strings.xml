@@ -21,8 +21,10 @@
 		<item>2</item>
 		<item>7</item>		
 	 </string-array>
+	 <string name="title_show_days_prevnext">Days of previous/next month</string>
+	 <string name="summary_show_days_prevnext">Show days of previous and next month dimmed</string>
 	 <string name="title_stretch_widget">Stretch widget</string>
-    <string name="summary_stretch_widget">Use all assigned space on home screen</string>
+    <string name="summary_stretch_widget">Use all assigned space on the home screen</string>
     
     <string name="feedback">Feedback</string>
 	 <string name="title_contactdev">Contact the developer</string>
@@ -39,7 +41,7 @@
     <string name="instr_sampleHS_description">A 3x2 widget ready to work</string>
     <string name="show_instructions">How to use it</string>
     <string name="instructions_shown">(Tap to dismiss)</string>
-    <string name="instructions_towork_1"><b>1.</b> Choose where on the home screen you want it</string>
+    <string name="instructions_towork_1"><b>1.</b> Press <b>Home</b> to go to the home screen. Choose where you want the widget</string>
     <string name="instructions_towork_2"><b>2.</b> Find <b>Month Calendar Widget</b> in the widget list (touch and hold screen, Widgets option in menu)</string>
     <string name="instructions_towork_3"><b>3.</b> Select one of two sizes (3x2 or 4x3)</string>
     <string name="instructions_towork_4"><b>4.</b> Adjust settings, press <b>Back</b> to exit</string>

@@ -77,7 +77,7 @@ public class MCWUpdateService extends IntentService {
 			setViewAction(context, views, MonthCalWidget.WIDGET_CLICK_MYTV, R.id.monthyear, cClass);
 		} catch (ClassNotFoundException e) {
 		}
-		cfh = new CalendarFillingHelper(mdh);
+		cfh = new CalendarFillingHelper(mdh, ph);
 		cfh.fillCalendar(context, views);
 		return views;
 	}

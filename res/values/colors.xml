@@ -2,9 +2,9 @@
 <resources>
     <color name="white">#FFFFFFFF</color>
     <color name="lightgray">#FFDBDBDB</color>
+    <color name="gray">#FFA6A6A6</color>
     <color name="today">#FF31517C</color>
     <color name="background">#71000000</color>
-    <color name="settings_background">#D8000000</color>
     <color name="instrsteps_background">#D8000000</color>
     <color name="instr_button">#FF0099CC</color>
 </resources>
