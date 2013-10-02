@@ -50,6 +50,14 @@
       <item name="android:layout_weight">1</item> 
       <item name="android:gravity">right</item>
    </style>
+   <style name="Settings_Icon_3x2">
+      <item name="android:layout_width">0dp</item>
+      <item name="android:layout_height">match_parent</item> 
+      <item name="android:layout_weight">1</item> 
+      <item name="android:layout_marginTop">4dp</item>
+      <item name="android:layout_marginLeft">2dp</item>
+      <item name="android:gravity">center</item>
+   </style>
    <!-- 4x3 -->
 	<style name="Img_Arrow_4x3">
 	 	<item name="android:background">@null</item>
@@ -82,5 +90,13 @@
       <item name="android:layout_height">match_parent</item> 
       <item name="android:layout_weight">1</item> 
       <item name="android:gravity">right</item>
+   </style>
+   <style name="Settings_Icon_4x3">
+      <item name="android:layout_width">0dp</item>
+      <item name="android:layout_height">match_parent</item> 
+      <item name="android:layout_weight">1</item> 
+      <item name="android:layout_marginTop">6dp</item>
+      <item name="android:layout_marginLeft">4dp</item>
+      <item name="android:gravity">center</item>
    </style>
 </resources>

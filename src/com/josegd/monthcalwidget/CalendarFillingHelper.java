@@ -73,8 +73,10 @@ public class CalendarFillingHelper {
 		int identifier;
 		for (int i = 1; i <= 6; i++) {
 			for (int j = 1; j <= 7; j++) {
-				identifier = cont.getResources().getIdentifier("date" + i + j, "id", cont.getPackageName());
-				rv.setTextViewText(identifier, " "); // Empty string caused layout problems in tablets
+				if (!(i == 6 && j == 7)) {  // No TextView at (6,7) since introduction of Settings icon
+					identifier = cont.getResources().getIdentifier("date" + i + j, "id", cont.getPackageName());
+					rv.setTextViewText(identifier, " "); // Empty string caused layout problems in tablets
+				}
 			}
 		}
 	}
@@ -85,28 +87,30 @@ public class CalendarFillingHelper {
 		boolean isToday;
 		for (int i = 1; i <= 6; i++)
 			for (int j = 1; j <= 7; j++) {
-				dateNumber = mdh.getDayAt(i-1, j-1);
-				identifier = cont.getResources().getIdentifier("date" + i + j, "id", cont.getPackageName());
-				isToday = mdh.getYear() == MCWUpdateService.yearNow &&
-							 mdh.getMonth() == MCWUpdateService.monthNow &&
-							 dateNumber == MCWUpdateService.today && mdh.isWithinCurrentMonth(i-1, j-1);
-				if (Build.VERSION.SDK_INT >= 8) {
-					rv.setInt(identifier, "setBackgroundResource", isToday ? R.color.today : android.R.color.transparent);
-					rv.setTextViewText(identifier, dateNumber + "");
-				} else {
-					String dateNumberStr = dateNumber + "";
-					SpannableStringBuilder ssb = new SpannableStringBuilder();
-					ssb.append(dateNumberStr);
-					if (isToday)
-						ssb.setSpan(new BackgroundColorSpan(cont.getResources().getColor(R.color.today)), 0, dateNumberStr.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-					rv.setTextViewText(identifier, ssb);
-				}
-				if (mdh.isWithinCurrentMonth(i-1, j-1)) {
-					rv.setTextColor(identifier, cont.getResources().getColor(R.color.white));
-					rv.setViewVisibility(identifier, View.VISIBLE);
-				} else {
-					rv.setTextColor(identifier, cont.getResources().getColor(R.color.gray));
-					rv.setViewVisibility(identifier, ph.showDaysPrevNextMonths() ? View.VISIBLE : View.INVISIBLE);
+				if (!(i == 6 && j == 7)) {  // No TextView at (6,7) since introduction of Settings icon
+					dateNumber = mdh.getDayAt(i-1, j-1);
+					identifier = cont.getResources().getIdentifier("date" + i + j, "id", cont.getPackageName());
+					isToday = mdh.getYear() == MCWUpdateService.yearNow &&
+								 mdh.getMonth() == MCWUpdateService.monthNow &&
+								 dateNumber == MCWUpdateService.today && mdh.isWithinCurrentMonth(i-1, j-1);
+					if (Build.VERSION.SDK_INT >= 8) {
+						rv.setInt(identifier, "setBackgroundResource", isToday ? R.color.today : android.R.color.transparent);
+						rv.setTextViewText(identifier, dateNumber + "");
+					} else {
+						String dateNumberStr = dateNumber + "";
+						SpannableStringBuilder ssb = new SpannableStringBuilder();
+						ssb.append(dateNumberStr);
+						if (isToday)
+							ssb.setSpan(new BackgroundColorSpan(cont.getResources().getColor(R.color.today)), 0, dateNumberStr.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+						rv.setTextViewText(identifier, ssb);
+					}
+					if (mdh.isWithinCurrentMonth(i-1, j-1)) {
+						rv.setTextColor(identifier, cont.getResources().getColor(R.color.white));
+						rv.setViewVisibility(identifier, View.VISIBLE);
+					} else {
+						rv.setTextColor(identifier, cont.getResources().getColor(R.color.gray));
+						rv.setViewVisibility(identifier, ph.showDaysPrevNextMonths() ? View.VISIBLE : View.INVISIBLE);
+					}
 				}
 			}
 	}

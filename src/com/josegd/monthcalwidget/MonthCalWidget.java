@@ -11,6 +11,7 @@ public class MonthCalWidget extends AppWidgetProvider {
 	public static String WIDGET_CLICK_NEXT    = "com.josegd.monthcalwidget.ACTION_NEXT_MONTH";
 	public static String WIDGET_CLICK_PREV    = "com.josegd.monthcalwidget.ACTION_PREV_MONTH";
 	public static String WIDGET_CLICK_MYTV    = "com.josegd.monthcalwidget.ACTION_CURRENT_MONTH";
+	
 	private static String WIDGET_DATE_CHANGED = "android.intent.action.DATE_CHANGED";
 	
 	private AlarmManagerHelper alh;

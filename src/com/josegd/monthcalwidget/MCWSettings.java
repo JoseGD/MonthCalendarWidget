@@ -106,7 +106,8 @@ public class MCWSettings extends PreferenceActivity implements OnSharedPreferenc
 				setResult(RESULT_OK, result);	// This will NOT trigger ACTION_APPWIDGET_UPDATE, better send a separate broadcast
 				this.getApplicationContext().sendBroadcast(new Intent(MCWUpdateService.UPD_AFTER_SETTINGS));
 			}
-		}
+		} else  // TODO: look for a more elegant solution than this
+			this.getApplicationContext().sendBroadcast(new Intent(MCWUpdateService.UPD_AFTER_SETTINGS));
 		finish();
 		//super.onBackPressed();  // Fails on SDK < 5 (2.0)
 	} 

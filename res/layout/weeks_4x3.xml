@@ -64,6 +64,9 @@
       <TextView android:id="@+id/date64" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date65" style="@style/Text_Dates_4x3"/>
       <TextView android:id="@+id/date66" style="@style/Text_Dates_4x3"/>
-      <TextView android:id="@+id/date67" style="@style/Text_Dates_4x3"/>
+      <ImageButton
+         android:id="@+id/settings"
+         android:src="@drawable/ic_action_settings" style="@style/Settings_Icon_4x3"
+         android:contentDescription="@string/desc_settings" android:focusable="true" />
    </LinearLayout>
 </merge>
