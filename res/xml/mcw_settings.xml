@@ -17,7 +17,12 @@
   			android:title="@string/title_stretch_widget"
          android:summary="@string/summary_stretch_widget"
          android:defaultValue="false"/>
-   </PreferenceCategory>
+      <CheckBoxPreference
+         android:key="show_settingsbtn"
+         android:title="@string/title_show_settingsbtn"
+         android:summary="@string/summary_show_settingsbtn"
+         android:defaultValue="false"/>
+  	</PreferenceCategory>
   		
    <PreferenceCategory android:title="@string/feedback">
    	<Preference

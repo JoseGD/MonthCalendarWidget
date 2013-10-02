@@ -9,7 +9,8 @@ public class PreferencesHelper {
 	private SharedPreferences prefs;
 	private String FDW_PREFERENCE   = "first_day_week";
 	private String SDPNM_PREFERENCE = "show_days_prevnext";
-	private String WW_PREFERENCE    = "stretch_widget";
+	private String SW_PREFERENCE    = "stretch_widget";
+	private String	SSB_PREFERENCE   = "show_settingsbtn";
 	private String CAL_SUNDAY 		  = "1";
 	
 	public PreferencesHelper(Context ctx) {
@@ -26,7 +27,11 @@ public class PreferencesHelper {
 	}
 	
 	public boolean stretchedWidgetPreferred() {
-		return prefs.getBoolean(WW_PREFERENCE, false);
+		return prefs.getBoolean(SW_PREFERENCE, false);
+	}
+	
+	public boolean showSettingsButton() {
+		return prefs.getBoolean(SSB_PREFERENCE, false);
 	}
 	
 }

@@ -26,6 +26,8 @@
 	 <string name="summary_show_days_prevnext">Show days of previous and next month dimmed</string>
 	 <string name="title_stretch_widget">Stretch widget</string>
     <string name="summary_stretch_widget">Use all assigned space on the home screen</string>
+    <string name="title_show_settingsbtn">Show Settings button</string>
+    <string name="summary_show_settingsbtn">Show button to access Settings from widget</string>
     
     <string name="feedback">Feedback</string>
 	 <string name="title_contactdev">Contact the developer</string>
